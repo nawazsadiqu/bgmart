@@ -3,6 +3,7 @@ import {
   Facebook,
   Instagram,
   Twitter,
+  Youtube,
   Mail,
   Phone,
   MapPin
@@ -62,16 +63,28 @@ const Footer = () => {
           </p>
 
           <div className="footer-socials">
-            
-           
-            <a
-              href="https://www.instagram.com/bgchimneymartbengaluru?igsh=aXd3azBpeXg4bzdy"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-             <Instagram size={18} />
-            </a>
-          </div>
+          <a href="https://www.instagram.com/bgchimneymartbengaluru?igsh=aXd3azBpeXg4bzdy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <Instagram size={18} />
+          </a>
+
+          <a href="https://www.facebook.com/bgchimneymarbengaluru?rdid=1HqqBfnCum8Pjax0&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17tSXGduCd%2F#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <Facebook size={18} />
+          </a>
+
+          <a href="https://www.youtube.com/@bgchimneymart-qn4qw"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          <Youtube size={18} />
+          </a>
+        </div>
+
         </div>
 
       </div>
