@@ -51,16 +51,30 @@ const Footer = () => {
 
         {/* Contact */}
         <div className="footer-section">
-          <h3 className="footer-title">Contact</h3>
-          <p className="footer-contact">
-            <Phone size={16} /> +91 779532 5616
-          </p>
-          <p className="footer-contact">
-            <Mail size={16} /> bgchimneymart1@gmail.com
-          </p>
-          <p className="footer-contact">
-            <MapPin size={16} /> Banglore,India
-          </p>
+  <h3 className="footer-title">Contact</h3>
+
+  <a
+    href="tel:+917795325616"
+    className="footer-contact"
+  >
+    <Phone size={16} /> +91 779532 5616
+  </a>
+
+  <a
+    href="mailto:bgchimneymart1@gmail.com"
+    className="footer-contact"
+  >
+    <Mail size={16} /> bgchimneymart1@gmail.com
+  </a>
+
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Banglore,India"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="footer-contact"
+  >
+    <MapPin size={16} /> Bangalore, India
+  </a>
 
           <div className="footer-socials">
           <a href="https://www.instagram.com/bgchimneymartbengaluru?igsh=aXd3azBpeXg4bzdy"
