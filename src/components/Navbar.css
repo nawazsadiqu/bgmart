@@ -39,7 +39,7 @@
         } */
 
         .nav-logo {
-          height: auto;      /* adjust size */
+          height: 80px;      /* adjust size */
           width: 220px;
           cursor: pointer;
           object-fit: cover;
