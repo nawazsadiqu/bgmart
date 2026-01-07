@@ -248,30 +248,32 @@
 
         @media (max-width: 768px) {
           .main-brand-container {
-            height: 320px;
+            height: 260px;
+            align-items: flex-start;
+            padding-top: 1rem;
             margin-top: 1rem;
             margin-bottom: 2rem;
           }
 
           .brand-card {
-            width: 240px;
-            padding: 0.75rem;
+            width: 210px;
+            padding: 0.6rem;
           }
 
           .brand-logo-container {
-            height: 60px;   /* smaller logo for mobile */
+            height: 50px;   /* smaller logo for mobile */
             margin-bottom: 1rem;
           }
 
           .brands-carousel-section {
             min-height: auto;
-            padding-top: 90px;          /* navbar height */
+            padding-top: 80px;          /* navbar height */
             padding-bottom: 2rem;
             /* padding: 2rem 0;  reduce vertical padding */
           }
 
           .brand-image-wrapper {
-            height: 140px;
+            height: 120px;
             margin-top: 1rem;
           }
 
@@ -285,6 +287,8 @@
 
           .brand-carousel .brand-card:not(.active) {
             display: none;
+            align-items: flex-start;
+            justify-content: center;
           }
 
           .nav-arrow {
