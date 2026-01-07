@@ -68,7 +68,7 @@ const Footer = () => {
   </a>
 
   <a
-    href="https://www.google.com/maps/search/?api=1&query=Banglore,India"
+    href="google.com/maps/place/BG+Chimney+Mart+(a+unit+of+Sampurna+Enterprises),+Ground+Floor,+3rd+Cross+Rd,+near+bheema+jewellers,+near+Nava+jeevan+ashram,+HRBR+Layout+3rd+Block,+HRBR+Layout,+HBR+Layout,+Bengaluru,+Karnataka+560043/data=!4m2!3m1!1s0x3bae1922347e7bf3:0x19c10553c48d9d85?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjQ5LjYYACCIJypsLDk0MjY3NzI3LDk0Mjc1NDA3LDk0MjkyMTk1LDk0Mjk5NTMyLDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5QgJJTg%3D%3D&skid=03534065-8cf1-49ad-a12d-ff98622af101&g_st=awb"
     target="_blank"
     rel="noopener noreferrer"
     className="footer-contact"
