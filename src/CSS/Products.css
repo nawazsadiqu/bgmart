@@ -100,6 +100,14 @@
     font-size: 1.6rem;
   }
 
+  .product-image {
+    height: 120px;   /* reduce from 160px */
+  }
+
+  .product-info {
+    padding: 0.7rem;
+  }
+
   /* 🔑 FORCE 2 COLUMNS */
   .products-grid {
     grid-template-columns: repeat(2, 1fr) !important;
