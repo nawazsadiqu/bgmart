@@ -144,10 +144,24 @@
 
           .hero-title {
             font-size: 2rem;
+            word-wrap: break-word;
+            line-height: 1.2;
           }
 
           .hero-subtitle {
             font-size: 1rem;
+            word-wrap: break-word;
+            line-height: 1.2;
+          }
+          .hero-section {
+            flex-direction: column;
+            padding: 60px 20px; /* less top padding for mobile */
+            text-align: center; /* center text horizontally */
+          }
+          .hero-content {
+            max-width: 90%;   /* shrink content width */
+            padding: 1rem;    /* reduce padding */
+            margin: 0 auto;   /* center horizontally */
           }
         }
 
@@ -155,5 +169,10 @@
           .glow-orb {
             width: 300px;
             height: 300px;
+          }
+          .hero-section {
+            justify-content: flex-start; /* or center if you like vertical center */
+            padding-top: 40px;
+            padding-bottom: 40px;
           }
         }
