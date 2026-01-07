@@ -248,7 +248,7 @@
 
         @media (max-width: 768px) {
           .main-brand-container {
-            height: 360px;
+            height: 400px;
             align-items: flex-start;
             padding-top: 1rem;
             margin-top: 1rem;
