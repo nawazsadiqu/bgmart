@@ -248,18 +248,19 @@
 
         @media (max-width: 768px) {
           .main-brand-container {
-            height: 420px;
+            height: 320px;
             margin-top: 1rem;
             margin-bottom: 2rem;
           }
 
           .brand-card {
-            width: 280px;
-            padding: 1rem;
+            width: 240px;
+            padding: 0.75rem;
           }
 
           .brand-logo-container {
-            height: 80px;   /* smaller logo for mobile */
+            height: 60px;   /* smaller logo for mobile */
+            margin-bottom: 1rem;
           }
 
           .brands-carousel-section {
@@ -267,6 +268,19 @@
             padding-top: 90px;          /* navbar height */
             padding-bottom: 2rem;
             /* padding: 2rem 0;  reduce vertical padding */
+          }
+
+          .brand-image-wrapper {
+            height: 140px;
+            margin-top: 1rem;
+          }
+
+          .brand-name {
+            font-size: 1.3rem;
+          }
+
+          .brand-description {
+            font-size: 0.85rem;
           }
 
           .brand-carousel .brand-card:not(.active) {
