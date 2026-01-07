@@ -169,25 +169,23 @@
         }
 
         @media (max-width: 768px) {
-          .nav-container {
-            justify-content: flex-start; /* left align everything */
-            gap: 1rem; 
-            padding: 0 1rem;
-          }
+  .nav-container {
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
 
-          .logo-text {
-            font-size: 1.4rem;
-          }
+  .nav-logo {
+    width: 120px;
+    height: auto;
+  }
 
-          .logo-subtext {
-            font-size: 0.55rem;
-          }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
 
-          .nav-icons {
-            display: none;
-          }
-          .nav-logo {
-            width: 120px;   /* smaller logo width */
-            height: auto;   /* maintain aspect ratio */
-          }
-        }
+  .nav-icons {
+    display: none;
+  }
+}
