@@ -102,7 +102,7 @@
 
   /* 🔑 FORCE 2 COLUMNS */
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: 1rem; /* slightly smaller gap for mobile */
   }
 }
