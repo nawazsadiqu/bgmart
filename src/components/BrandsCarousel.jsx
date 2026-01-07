@@ -177,18 +177,8 @@ const BrandsCarousel = () => {
           </button>
         </div>
 
-        {/* Brand Grid/List Below */}
-        <div className="brands-grid">
-          {brands.map((brand, index) => (
-            <div
-              key={brand.id}
-              className={`brand-grid-item ${index === currentIndex ? 'selected' : ''}`}
-              onClick={() => goToSlide(index)}
-            >
-              <img src={brand.logo} alt={brand.name} />
-            </div>
-          ))}
-        </div>
+        
+        
 
         {/* Carousel Indicators */}
         <div className="carousel-indicators">
