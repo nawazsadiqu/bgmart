@@ -101,6 +101,17 @@
     grid-template-columns: 1fr;
   }
 
+  .footer-links-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .footer-section {
+    flex: 1;
+  }
+
   .footer {
     text-align: center;
   }

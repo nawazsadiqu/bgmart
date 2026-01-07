@@ -24,6 +24,7 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
+        <div className="footer-links-row">
         <div className="footer-section">
           <h3 className="footer-title">Quick Links</h3>
           <ul className="footer-links">
@@ -33,6 +34,7 @@ const Footer = () => {
             <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
+        
 
         {/* Categories */}
         <div className="footer-section">
@@ -43,6 +45,7 @@ const Footer = () => {
             <li><a href="#kitchen">Kitchen Appliances</a></li>
             <li><a href="#electronics">Electronics</a></li>
           </ul>
+        </div>
         </div>
 
         {/* Contact */}
