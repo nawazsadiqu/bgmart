@@ -22,8 +22,8 @@ const ContactUs = () => {
 
           <p>
             ✉️ <strong>Email:</strong>{" "}
-            <a href="mailto:nawazsadiqu@gmail.com">
-              nawazsadiqu@gmail.com
+            <a href="mailto:bgchimneymart1@gmail.com">
+              bgchimneymart1@gmail.com
             </a>
           </p>
           <br />

@@ -23,6 +23,11 @@ const Navigationbar = () => {
     }
   };
 
+  const navigateAndClose = (path) => {
+  setMenuOpen(false);
+  navigate(path);
+};
+
   return (
     <nav className="navbar">
       <div className="nav-container">
@@ -43,28 +48,10 @@ const Navigationbar = () => {
         </button>
 
         <div className={`nav-menu ${menuOpen ? "active" : ""}`}>
-          <button className="nav-link" onClick={() => handleNavigation("home")}>
-            Home
-          </button>
-
-          <button
-            className="nav-link"
-            onClick={() => handleNavigation("products")}
-          >
-            Best Sellers
-          </button>
-
-          <button 
-            className="nav-link" 
-            onClick={() => navigate("/about")}>
-             About Us
-          </button>
-
-          <button 
-            className="nav-link" 
-            onClick={() => navigate("/contact-us")}>
-              Contact Us
-          </button>
+          <button className="nav-link" onClick={() => handleNavigation("home")}>Home</button>
+          <button className="nav-link" onClick={() => handleNavigation("products")}>Best Sellers</button>
+          <button className="nav-link" onClick={() => navigateAndClose("/about")}>About Us</button>
+          <button className="nav-link" onClick={() => navigateAndClose("/contact-us")}>Contact Us</button>
         </div>
       </div>
     </nav>
