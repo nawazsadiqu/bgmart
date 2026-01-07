@@ -248,7 +248,8 @@
 
         @media (max-width: 768px) {
           .main-brand-container {
-            height: 400px;
+            height: 420px;
+            margin-top: 1rem;
             margin-bottom: 2rem;
           }
 
@@ -262,7 +263,10 @@
           }
 
           .brands-carousel-section {
-            padding: 2rem 0;  /* reduce vertical padding */
+            min-height: auto;
+            padding-top: 90px;          /* navbar height */
+            padding-bottom: 2rem;
+            /* padding: 2rem 0;  reduce vertical padding */
           }
 
           .brand-carousel .brand-card:not(.active) {
@@ -286,7 +290,14 @@
             grid-template-columns: repeat(2, 1fr);
           }
           .section-header {
-            margin-bottom: 2rem;  /* reduce spacing */
+            margin-bottom: 1.5rem;  /* reduce spacing */
             padding: 0 1rem;      /* reduce horizontal padding */
-  }
+          }
+          .section-title {
+             font-size: 2rem;
+          }
+
+          .section-subtitle {
+            font-size: 0.95rem;
+          }
         }

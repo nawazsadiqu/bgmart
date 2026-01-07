@@ -28,7 +28,7 @@ const Navigationbar = () => {
       <div className="nav-container">
         <div className="nav-brand">
           <img
-            src="/images/Logo.PNG"
+            src="/images/Logo2.png"
             alt="BG Chimney Mart"
             className="nav-logo"
           />
