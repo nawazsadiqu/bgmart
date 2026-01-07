@@ -1,0 +1,187 @@
+.navbar {
+          background: transparent;
+          backdrop-filter: blur(10px);
+          /* padding: 1rem 0; */
+          /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); */
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+        }
+
+        .nav-container {
+          width: 100%;
+          /* padding: 0 2rem; */
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 70px;
+        }
+
+        /* .nav-brand {
+          flex-shrink: 0;
+        } */
+
+        /* .logo {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .logo-text {
+          font-size: 1.8rem;
+          font-weight: 700;
+          letter-spacing: 2px;
+          color: #fff;
+          line-height: 1;
+        } */
+
+        .nav-logo {
+          height: 80px;      /* adjust size */
+          width: 220px;
+          cursor: pointer;
+          object-fit: cover;
+        }
+
+        .logo-subtext {
+          font-size: 0.65rem;
+          letter-spacing: 3px;
+          color: #fff;
+          margin-top: 2px;
+        }
+
+        .menu-toggle {
+          display: none;
+          background: none;
+          border: none;
+          color: #fff;
+          cursor: pointer;
+          padding: 0.5rem;
+        }
+
+        .nav-menu {
+          display: flex;
+          gap: 1.5rem;
+          align-items: center;
+          justify-content: flex-start;
+          padding-right: 3.5rem;
+        }
+
+        .nav-link {
+          color: #c76a00;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 400;
+          transition: color 0.3s ease;
+          position: relative;
+          background: none;
+          border: none;
+          width: auto;
+          white-space: nowrap;
+          text-align: center;
+          padding: 0.5rem 0;
+        }
+
+        .nav-link:hover {
+          color: #daa520;
+        }
+
+        .nav-link::after {
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: #daa520;
+          transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+          width: 100%;
+        }
+
+        .nav-icons {
+          display: flex;
+          gap: 1.5rem;
+          align-items: center;
+        }
+
+        .icon-link {
+          color: #fff;
+          transition: opacity 0.3s ease;
+          cursor: pointer;
+          position: relative;
+        }
+
+        .icon-link:hover {
+          opacity: 0.7;
+        }
+
+        .cart-link {
+          position: relative;
+        }
+
+        .cart-badge {
+          position: absolute;
+          top: -8px;
+          right: -8px;
+          background-color: #fff;
+          color: #000;
+          font-size: 0.65rem;
+          font-weight: 600;
+          border-radius: 50%;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        @media (max-width: 992px) {
+          .menu-toggle {
+            display: block;
+          }
+
+          .nav-menu {
+            position: absolute;
+            top: 100%;
+            left: 1rem;
+            right: 1rem;
+            background-color: rgba(20, 20, 20, 0.98);
+            flex-direction: column;
+            padding: 2rem;
+            margin-top: 0;
+            box-sizing: border-box;
+            border-radius: 8px;
+            display: none;
+            background-clip: padding-box;
+          }
+
+          .nav-menu.active {
+            display: flex;
+          }
+
+          .nav-icons {
+            gap: 1rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .nav-container {
+            padding: 0 1rem;
+          }
+
+          .logo-text {
+            font-size: 1.4rem;
+          }
+
+          .logo-subtext {
+            font-size: 0.55rem;
+          }
+
+          .nav-icons {
+            display: none;
+          }
+        }

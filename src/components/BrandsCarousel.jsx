@@ -1,0 +1,208 @@
+import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import '../CSS/Brand.css'
+import { useNavigate } from "react-router-dom";
+
+
+const BrandsCarousel = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const navigate = useNavigate();
+
+
+  // Brand data - easily add or modify brands here
+  const brands = [
+    {
+      id: 1,
+      name: 'BOSCH',
+      slug: 'bosch',
+      logo: '/images/Bosch-Logo1.jpg',
+      description: 'German Engineering Excellence',
+      image: '/images/boschbanner.jpeg'
+    },
+    {
+      id: 2,
+      name: 'SUJATA',
+      slug: 'sujata',
+      logo: '/images/sujata-logo.png',
+      description: "Life's Good with Quality Appliances",
+      image: '/images/sujata-banner.jpg'
+    },
+    {
+      id: 3,
+      name: 'WEBER',
+      slug: 'weber',
+      logo: '/images/weber-logo.png',
+      description: 'Wherever You Go, the Weber Traveler Will Follow',
+      image: '/images/weber-banner.jpg'
+    },
+    {
+      id: 4,
+      name: 'FUTURA',
+      slug: 'futura',
+      logo: '/images/futura-logo.png',
+      description: 'Sinks that Think',
+      image: '/images/futura-banner.jpg'
+    },
+    {
+      id: 5,
+      name: 'AO Smith',
+      slug: 'aosmith',
+      logo: '/images/aosmith-logo.png',
+      description: 'Innovation has a name',
+      image: '/images/aosmith-banner.jpeg'
+    },
+    {
+      id: 6,
+      name: 'CARYSIL',
+      slug: 'carysil',
+      logo: '/images/carysil.png',
+      description: 'German Engineered',
+      image: '/images/carysil-banner.png'
+    },
+    {
+      id: 7,
+      name: 'ORIENT',
+      slug: 'orient',
+      logo: '/images/orient-logo.png',
+      description: 'We give you products that are just right for you',
+      image: '/images/orient-banner.jpg'
+    },
+    {
+      id: 8,
+      name: 'FABER',
+      slug: 'faber',
+      logo: '/images/faber-logo.png',
+      description: "Frank's Air Expert",
+      image: '/images/faber-banner.jpg'
+    },
+    {
+      id: 9,
+      name: 'HINDWARE',
+      slug: 'hindware',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    }
+  ];
+
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+    
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, isAutoPlaying]);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % brands.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + brands.length) % brands.length);
+  };
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+    setIsAutoPlaying(false);
+  };
+
+  // Get visible brands for carousel
+  const getVisibleBrands = () => {
+    const visible = [];
+    for (let i = -2; i <= 2; i++) {
+      const index = (currentIndex + i + brands.length) % brands.length;
+      visible.push({ ...brands[index], offset: i });
+    }
+    return visible;
+  };
+  
+  return (
+    <div className="brands-carousel-section">
+      <div className="section-header">
+        <h2 className="section-title">Our Partner Brands</h2>
+        <p className="section-subtitle">Trusted by the world's leading appliance manufacturers</p>
+      </div>
+
+      <div className="carousel-wrapper">
+        {/* Main Brand Display */}
+        <div className="main-brand-container">
+          <div className="brand-carousel">
+            {getVisibleBrands().map((brand, idx) => (
+              <div
+                  key={brand.id}
+                  className={`brand-card ${brand.offset === 0 ? 'active' : ''}`}
+                  style={{
+                  transform: `translateX(${brand.offset * 350}px) scale(${brand.offset === 0 ? 1.2 : 0.8})`,
+                  opacity: brand.offset === 0 ? 1 : 0.4,
+                  zIndex: brand.offset === 0 ? 10 : 1,
+                  cursor: "pointer"
+                }}
+                onClick={() => navigate(`/brands/${brand.slug}`)}
+              >
+
+                <div className="brand-logo-container">
+                  <img src={brand.logo} alt={brand.name} className="brand-logo" />
+                </div>
+                <div className="brand-info">
+                  <h3 className="brand-name">{brand.name}</h3>
+                  <p className="brand-description">{brand.description}</p>
+                </div>
+                {brand.offset === 0 && (
+                  <div className="brand-image-wrapper">
+                    <img src={brand.image} alt={brand.name} className="brand-image" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation Arrows */}
+          <button 
+            className="nav-arrow nav-arrow-left" 
+            onClick={prevSlide}
+            onMouseEnter={() => setIsAutoPlaying(false)}
+          >
+            <ChevronLeft size={32} />
+          </button>
+          <button 
+            className="nav-arrow nav-arrow-right" 
+            onClick={nextSlide}
+            onMouseEnter={() => setIsAutoPlaying(false)}
+          >
+            <ChevronRight size={32} />
+          </button>
+        </div>
+
+        {/* Brand Grid/List Below */}
+        <div className="brands-grid">
+          {brands.map((brand, index) => (
+            <div
+              key={brand.id}
+              className={`brand-grid-item ${index === currentIndex ? 'selected' : ''}`}
+              onClick={() => goToSlide(index)}
+            >
+              <img src={brand.logo} alt={brand.name} />
+            </div>
+          ))}
+        </div>
+
+        {/* Carousel Indicators */}
+        <div className="carousel-indicators">
+          {brands.map((_, index) => (
+            <button
+              key={index}
+              className={`indicator ${index === currentIndex ? 'active' : ''}`}
+              onClick={() => goToSlide(index)}
+            />
+          ))}
+        </div>
+      </div>
+      </div>
+  )
+}
+
+export default BrandsCarousel

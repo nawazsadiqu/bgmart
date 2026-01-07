@@ -1,0 +1,71 @@
+/* PAGE BACKGROUND */
+.about-page {
+  background: radial-gradient(circle at top, #000000, #361800);
+  min-height: 100vh;
+  padding: 100px 20px;
+  color: #cfcfcf;
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+}
+
+/* MAIN CONTAINER */
+.about-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADING */
+.about-container h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #d4af37;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* PARAGRAPHS */
+.about-container p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #cfcfcf;
+  text-align: center;
+}
+
+/* HIGHLIGHT SECTION */
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-top: 60px;
+}
+
+/* CARDS */
+.highlight-card {
+  background: linear-gradient(145deg, #111, #0b0b0b);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 30px 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.08);
+}
+
+/* CARD HOVER */
+.highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.25);
+}
+
+/* CARD TITLE */
+.highlight-card h3 {
+  color: #f1d27a;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+/* CARD TEXT */
+.highlight-card p {
+  font-size: 16px;
+  color: #bdbdbd;
+}

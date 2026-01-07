@@ -1,0 +1,36 @@
+.contact-page {
+  background: linear-gradient(180deg, #000 0%, #1b0a00 100%);
+  min-height: 100vh;
+  padding: 100px 20px;
+  color: #cfcfcf;
+}
+
+.contact-container {
+    margin-left: 30px;
+  margin-top: 30px;
+  max-width: 1400px;
+  /* margin: auto; */
+  /* text-align: center; */
+}
+
+.contact-container h1 {
+  font-size: 40px;
+  color: #d4af37;
+  margin-bottom: 30px;
+}
+
+/* CONTACT INFO */
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.contact-info a {
+  color: #f1d27a;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
