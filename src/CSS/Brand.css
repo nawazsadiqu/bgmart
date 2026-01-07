@@ -248,11 +248,21 @@
 
         @media (max-width: 768px) {
           .main-brand-container {
-            height: 450px;
+            height: 400px;
+            margin-bottom: 2rem;
           }
 
           .brand-card {
             width: 280px;
+            padding: 1rem;
+          }
+
+          .brand-logo-container {
+            height: 80px;   /* smaller logo for mobile */
+          }
+
+          .brands-carousel-section {
+            padding: 2rem 0;  /* reduce vertical padding */
           }
 
           .brand-carousel .brand-card:not(.active) {
@@ -275,4 +285,8 @@
           .brands-grid {
             grid-template-columns: repeat(2, 1fr);
           }
+          .section-header {
+            margin-bottom: 2rem;  /* reduce spacing */
+            padding: 0 1rem;      /* reduce horizontal padding */
+  }
         }
