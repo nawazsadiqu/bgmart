@@ -70,22 +70,20 @@
   color: #bdbdbd;
 }
 
-/* Mobile view: single column for highlights */
+
+/* Mobile view: horizontal scroll for highlights */
 @media (max-width: 768px) {
   .about-highlights {
-    grid-template-columns: 1fr;  /* Single column */
-    gap: 20px;                   /* Optional: reduce gap for mobile */
+    display: flex;             /* Switch from grid to flex */
+    flex-direction: row;       /* Horizontal row */
+    gap: 15px;                 /* Space between cards */
+    overflow-x: auto;          /* Enable horizontal scroll */
+    padding-bottom: 10px;      /* Optional: space for scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   }
 
   .highlight-card {
-    padding: 20px 15px;          /* Optional: reduce padding for mobile */
-  }
-
-  .highlight-card h3 {
-    font-size: 18px;             /* Slightly smaller title */
-  }
-
-  .highlight-card p {
-    font-size: 14px;             /* Slightly smaller text */
+    flex: 0 0 80%;             /* Each card takes 80% of screen width */
+    min-width: 250px;          /* Minimum width to avoid being too small */
   }
 }
