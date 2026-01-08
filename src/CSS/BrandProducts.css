@@ -135,8 +135,8 @@
   }
 
   .product-card {
-    height: 220px; /* fixed height for all cards */
-    max-height: 220px;
+    height: 270px; /* fixed height for all cards */
+    max-height: 270px;
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
