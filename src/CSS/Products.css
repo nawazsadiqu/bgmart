@@ -87,17 +87,18 @@
 
   /* Product card */
   .product-card {
-    height: auto;           /* wrap content */
+    height: auto;          /* wrap content */
     padding: 0;
-    display: block;         /* remove flex stretching */
+    display: block;        /* remove flex stretching */
     overflow: hidden;
     border-radius: 6px;
     background: #000;
+    box-shadow: none;      /* optional: remove shadow if you want minimal height */
   }
 
   /* Product image */
   .product-image {
-    height: 70px;
+    height: 60px;          /* smaller image */
     margin: 0;
     padding: 0;
   }
@@ -111,24 +112,27 @@
 
   /* Product info (name) */
   .product-info {
-    padding: 0.1rem 0;      /* almost no padding */
+    padding: 0;            /* remove padding */
+    margin: 0;             /* remove margin */
     text-align: center;
   }
 
   .product-info h3 {
     font-size: 0.75rem;
     line-height: 1;
-    margin: 0;
+    margin: 0;             /* remove all margin */
+    padding: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  /* Hide other elements if present */
+  /* Hide other elements */
   .price,
   .btn {
     display: none;
   }
 }
+
 
 
