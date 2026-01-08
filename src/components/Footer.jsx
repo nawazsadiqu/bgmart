@@ -73,7 +73,10 @@ const Footer = () => {
     rel="noopener noreferrer"
     className="footer-contact"
   >
-    <MapPin size={16} /> Bangalore, India
+    <MapPin size={16} />B.G. CHIMNEY MART
+# 225/1, Ground Floor, Shivaramaiah Layout
+H.B.R. Layout, 3rd Block, Kalyan Nagar Post,
+Bengaluru - 560 043.
   </a>
 
           <div className="footer-socials">
