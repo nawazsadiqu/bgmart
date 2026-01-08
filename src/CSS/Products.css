@@ -71,34 +71,57 @@
 /* Responsive */
 @media (max-width: 768px) {
   .products-page {
-    padding: 0.8rem 0.4rem;
+    padding: 0.6rem 0.4rem;
   }
 
   .products-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+     margin-bottom: 1rem;
   }
 
   .product-image {
     height: 120px;   /* reduce from 160px */
   }
 
+  
+
   .product-info {
-    padding: 0.1rem;
+    padding: 0.25rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-info h3 {
+    font-size: 0.8rem;
+    line-height: 1.1;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   /* 🔑 FORCE 2 COLUMNS */
   .products-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 0.8rem; /* slightly smaller gap for mobile */
+    gap: 0.6rem; /* slightly smaller gap for mobile */
   }
 
   .product-card {
-    height: 150px;  /* fixed height for uniform cards */
-    max-height: 150px;
+    height: 120px;  /* fixed height for uniform cards */
+    max-height: 120px;
+     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: flex-start;
     overflow: hidden;
+  }
+
+  .price,
+  .btn {
+    display: none;
   }
 }
