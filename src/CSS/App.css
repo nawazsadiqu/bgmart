@@ -57,3 +57,179 @@ html, body,
             font-size: 0.9rem;
           }
         }
+
+
+
+        .social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  width: 70px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-us {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 0;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us .arrow {
+  writing-mode: horizontal-tb;
+  transform: rotate(90deg);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contact-us .text {
+  letter-spacing: 2px;
+}
+
+.facebook {
+  background: #3b5998;
+}
+
+.facebook:hover {
+  background: #2d4373;
+}
+
+.instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #d87e2d 0%,
+    #d05a30 25%,
+    #c21f37 50%,
+    #b01d5a 75%,
+    #a01478 100%
+  );
+}
+
+.youtube {
+  background: #FF0000;
+}
+
+.youtube:hover {
+  background: #cc0000;
+}
+
+.social-link i {
+  font-size: 22px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .social-sidebar {
+    width: 50px;
+  }
+
+  .social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .social-link:hover {
+    width: 55px;
+  }
+
+  .contact-us {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+
+  .contact-us .arrow {
+    font-size: 14px;
+  }
+
+  .social-link i {
+    font-size: 18px;
+  }
+}
+
+
+.social-sidebar {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+/* Hidden state */
+.social-sidebar.hidden {
+  transform: translate(-100%, -50%);
+}
+
+/* Toggle button */
+.sidebar-toggle {
+  position: fixed;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 26px;
+  height: 50px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Move toggle when hidden */
+.social-sidebar.hidden + .sidebar-toggle {
+  left: 0;
+}
+
+
+@media (max-width: 768px) {
+  .social-sidebar {
+    transform: translate(-100%, -50%);
+  }
+
+  .sidebar-toggle {
+    left: 0;
+  }
+}

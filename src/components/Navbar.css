@@ -70,7 +70,7 @@
         }
 
         .nav-link {
-          color: #c76a00;
+          color: #000000;
           text-decoration: none;
           font-size: 1rem;
           font-weight: 400;
@@ -85,7 +85,7 @@
         }
 
         .nav-link:hover {
-          color: #daa520;
+          color: #ceac58;
         }
 
         .nav-link::after {

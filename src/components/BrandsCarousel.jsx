@@ -38,7 +38,7 @@ const BrandsCarousel = () => {
       name: 'WEBER',
       slug: 'weber',
       logo: '/images/weber-logo.png',
-      description: 'Wherever You Go, the Weber Traveler Will Follow',
+      description: ' Weber Traveler Will Follow',
       image: '/images/weber-banner.jpg'
     },
     {
@@ -70,7 +70,7 @@ const BrandsCarousel = () => {
       name: 'ORIENT',
       slug: 'orient',
       logo: '/images/orient-logo.png',
-      description: 'We give you products that are just right for you',
+      description: 'Products that are just right for you',
       image: '/images/orient-banner.jpg'
     },
     {
