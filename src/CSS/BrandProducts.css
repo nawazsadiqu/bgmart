@@ -128,3 +128,37 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .product-card {
+    height: 320px; /* fixed height for all cards */
+    max-height: 320px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+
+  .product-description {
+    overflow: hidden; /* hide overflow text */
+    text-overflow: ellipsis; /* add ... if text is too long */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* limit to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+
+  .product-image {
+    height: 120px; /* smaller image for mobile */
+  }
+
+  .product-name {
+    font-size: 1rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+}
