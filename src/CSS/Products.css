@@ -110,7 +110,7 @@
   }
 
   .product-card {
-    height: 120px;  /* fixed height for uniform cards */
+    height: 80px;  /* fixed height for uniform cards */
     max-height: 120px;
      padding: 0;
     display: flex;
