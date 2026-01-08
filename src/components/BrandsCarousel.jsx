@@ -9,6 +9,11 @@ const BrandsCarousel = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const navigate = useNavigate();
 
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
+
+  const MIN_SWIPE_DISTANCE = 50;
+
 
   // Brand data - easily add or modify brands here
   const brands = [
@@ -94,6 +99,9 @@ const BrandsCarousel = () => {
       nextSlide();
     }, 4000);
 
+    
+
+
     return () => clearInterval(interval);
   }, [currentIndex, isAutoPlaying]);
 
@@ -119,6 +127,30 @@ const BrandsCarousel = () => {
     }
     return visible;
   };
+
+  const onTouchStart = (e) => {
+  setIsAutoPlaying(false);
+  setTouchEndX(null);
+  setTouchStartX(e.targetTouches[0].clientX);
+};
+
+const onTouchMove = (e) => {
+  setTouchEndX(e.targetTouches[0].clientX);
+};
+
+const onTouchEnd = () => {
+  if (!touchStartX || !touchEndX) return;
+
+  const distance = touchStartX - touchEndX;
+
+  if (distance > MIN_SWIPE_DISTANCE) {
+    nextSlide(); // swipe left → next
+  }
+
+  if (distance < -MIN_SWIPE_DISTANCE) {
+    prevSlide(); // swipe right → prev
+  }
+};
   
   return (
     <div className="brands-carousel-section">
@@ -130,7 +162,12 @@ const BrandsCarousel = () => {
       <div className="carousel-wrapper">
         {/* Main Brand Display */}
         <div className="main-brand-container">
-          <div className="brand-carousel">
+          <div
+            className="brand-carousel"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+>
             {getVisibleBrands().map((brand, idx) => (
               <div
                   key={brand.id}
@@ -196,3 +233,80 @@ const BrandsCarousel = () => {
 }
 
 export default BrandsCarousel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
