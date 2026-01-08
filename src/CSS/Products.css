@@ -93,7 +93,7 @@
 
   /* Product image */
   .product-image {
-    height: 80px !important;  /* control height */
+    height: 100px !important;  /* control height */
     margin: 0;
     padding: 0;
   }
