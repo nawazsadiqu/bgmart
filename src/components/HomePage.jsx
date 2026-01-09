@@ -9,12 +9,11 @@ const HomePage = () => {
         
         <div className="hero-content">
           <h1 className="hero-title">
-            Luxury Kitchen,<br />
-            Chimneys Timeless Elegence.
+            Luxury Kitchen Appliances and Home Appliances
+            
           </h1>
           <p className="hero-subtitle">
-            Comfort and Convenience<br />
-            At your Doorsteps.
+            Multi brands like <b>BOSCH HAFELE FABER KAFF HINDWARE</b>
           </p>
           
       
