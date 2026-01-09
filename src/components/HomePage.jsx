@@ -9,8 +9,8 @@ const HomePage = () => {
         
         <div className="hero-content">
           <h1 className="hero-title">
-            Powering Your Home<br />
-            Simplifying Your Life
+            Luxury Kitchen,<br />
+            Chimneys Timeless Elegence.
           </h1>
           <p className="hero-subtitle">
             Comfort and Convenience<br />
