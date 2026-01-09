@@ -170,6 +170,7 @@ const App = () => {
         className="chat-button-fixed"
         onClick={handleWhatsAppChat}
       >
+        <span className="chat-tooltip">Chat with our sales executive</span>
         Chat Now
       </button>
     </div>

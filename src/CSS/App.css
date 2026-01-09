@@ -39,11 +39,33 @@ html, body,
           z-index: 999;
         }
 
+        .chat-tooltip {
+  position: absolute;
+  right: 100%;              /* 🔑 move to left */
+  margin-right: 12px;
+  background: transparent;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+
         .chat-button-fixed:hover {
           transform: translateY(-3px);
           box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
           background-color: #20bd5a;
         }
+
+        .chat-button-fixed:hover .chat-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
 
         .chat-button-fixed:active {
           transform: translateY(-1px);
