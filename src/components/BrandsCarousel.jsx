@@ -83,6 +83,14 @@ const BrandsCarousel = () => {
     },
     {
       id: 9,
+      name: 'KAFF',
+      slug: 'kaff',
+      logo: '/images/kaff-logo.jfif',
+      description: "Royal Kitchen World",
+      image: '/images/kaff-banner.webp'
+    },
+    {
+      id: 10,
       name: 'HINDWARE',
       slug: 'hindware',
       logo: '/images/hindware-logo.png',
