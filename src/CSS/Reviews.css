@@ -95,7 +95,12 @@
 }
 
 @media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
   .review-card {
-    transform: translateY(0) !important;
+    transform: none;      /* no hover zoom on mobile */
   }
 }
