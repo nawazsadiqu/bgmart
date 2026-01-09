@@ -7,6 +7,7 @@ import BrandsCarousel from "./components/BrandsCarousel";
 import BrandProducts from "./components/BrandProducts";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
+import Gallery from "./pages/Gallery";
 import "./CSS/App.css";
 import ContactUs from "./components/ContactUs";
 import { Facebook, Instagram, Youtube } from "lucide-react";
@@ -60,7 +61,7 @@ const App = () => {
       <Navigationbar />
 
       {/* Social Media Sidebar */}
-      <div className={`social-sidebar ${sidebarVisible ? "" : "hidden"}`}>
+      {/* <div className={`social-sidebar ${sidebarVisible ? "" : "hidden"}`}>
   <button 
     className="social-link contact-us" 
     onClick={handleContactClick}
@@ -80,7 +81,30 @@ const App = () => {
   <button className="social-link youtube" onClick={handleYouTubeClick}>
     <Youtube size={22} />
   </button>
+</div> */}
+
+
+<div className={`social-sidebar ${sidebarVisible ? "show" : "hide"}`}>
+  <button
+    className="sidebar-toggle"
+    onClick={() => setSidebarVisible(!sidebarVisible)}
+  >
+    {sidebarVisible ? "❮" : "❯"}
+  </button>
+
+  <button className="social-link contact-us" onClick={handleContactClick}>
+    Contact
+  </button>
+
+  <button className="social-link facebook" onClick={handleFacebookClick}>
+    <i className="fab fa-facebook-f"></i>
+  </button>
+
+  <button className="social-link instagram" onClick={handleInstagramClick}>
+    <i className="fab fa-instagram"></i>
+  </button>
 </div>
+
 
 <button
   className="sidebar-toggle"
@@ -105,6 +129,7 @@ const App = () => {
           />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/gallery" element={<Gallery />} />
 
           <Route path="/brands/:brandName" element={<BrandProducts />} />
         </Routes>

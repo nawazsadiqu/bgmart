@@ -50,6 +50,7 @@ const Navigationbar = () => {
         <div className={`nav-menu ${menuOpen ? "active" : ""}`}>
           <button className="nav-link" onClick={() => handleNavigation("home")}>Home</button>
           <button className="nav-link" onClick={() => handleNavigation("products")}>Best Sellers</button>
+          <button className="nav-link" onClick={() => navigateAndClose("/gallery")}>Gallery</button>
           <button className="nav-link" onClick={() => navigateAndClose("/about")}>About Us</button>
           <button className="nav-link" onClick={() => navigateAndClose("/contact-us")}>Contact Us</button>
         </div>

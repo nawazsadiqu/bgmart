@@ -146,14 +146,14 @@
             font-size: 2rem;
             word-wrap: break-word;
             line-height: 1.2;
-            margin-bottom: 180px;
+            margin-bottom: 280px;
           }
 
           .hero-subtitle {
             font-size: 1rem;
             word-wrap: break-word;
             line-height: 1.2;
-            margin-bottom: 180px;
+            margin-top: -80px;
           }
           .hero-section {
             flex-direction: column;
