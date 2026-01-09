@@ -4,8 +4,8 @@ import "../CSS/Reviews.css";
 const reviewImages = [
   "/images/review3.jpeg",
   "/images/review1.jpeg",
-  "/images/review4.jpeg",
   "/images/review2.jpeg",
+  "/images/review4.jpeg",
   "/images/review5.jpeg",
 ];
 
