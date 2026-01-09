@@ -60,52 +60,7 @@ const App = () => {
     <div className="app-wrapper">
       <Navigationbar />
 
-      {/* Social Media Sidebar */}
-      {/* <div className={`social-sidebar ${sidebarVisible ? "" : "hidden"}`}>
-  <button 
-    className="social-link contact-us" 
-    onClick={handleContactClick}
-  >
-    <span className="arrow">→</span>
-    <span className="text">Contact Us</span>
-  </button>
-
-  <button className="social-link facebook" onClick={handleFacebookClick}>
-    <Facebook size={22} />
-  </button>
-
-  <button className="social-link instagram" onClick={handleInstagramClick}>
-    <Instagram size={22} />
-  </button>
-
-  <button className="social-link youtube" onClick={handleYouTubeClick}>
-    <Youtube size={22} />
-  </button>
-</div> */}
-
-{/* 
-<div className={`social-sidebar ${sidebarVisible ? "show" : "hide"}`}>
-  <button
-    className="sidebar-toggle"
-    onClick={() => setSidebarVisible(!sidebarVisible)}
-  >
-    {sidebarVisible ? "❮" : "❯"}
-  </button>
-
-  <button className="social-link contact-us" onClick={handleContactClick}>
-    Contact
-  </button>
-
-  <button className="social-link facebook" onClick={handleFacebookClick}>
-    <i className="fab fa-facebook-f"></i>
-  </button>
-
-  <button className="social-link instagram" onClick={handleInstagramClick}>
-    <i className="fab fa-instagram"></i>
-  </button>
-</div> */}
-
-{/* Social Media Sidebar */}
+     
 <div className={`social-sidebar ${sidebarVisible ? "show" : "hide"}`}>
 
   <button
@@ -133,16 +88,6 @@ const App = () => {
   </button>
 
 </div>
-
-
-
-{/* <button
-  className="sidebar-toggle"
-  onClick={() => setSidebarVisible(!sidebarVisible)}
-  aria-label="Toggle Sidebar"
->
-  {sidebarVisible ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
-</button> */}
 
       <main className="main-content">
         <Routes>
