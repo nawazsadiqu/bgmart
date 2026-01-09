@@ -7,11 +7,11 @@ import BrandsCarousel from "./components/BrandsCarousel";
 import BrandProducts from "./components/BrandProducts";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
-import Gallery from "./pages/Gallery";
 import "./CSS/App.css";
 import ContactUs from "./components/ContactUs";
 import { Facebook, Instagram, Youtube } from "lucide-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Gallery from "./components/Gallery";
 
 
 const App = () => {
@@ -83,7 +83,7 @@ const App = () => {
   </button>
 </div> */}
 
-
+{/* 
 <div className={`social-sidebar ${sidebarVisible ? "show" : "hide"}`}>
   <button
     className="sidebar-toggle"
@@ -103,16 +103,46 @@ const App = () => {
   <button className="social-link instagram" onClick={handleInstagramClick}>
     <i className="fab fa-instagram"></i>
   </button>
+</div> */}
+
+{/* Social Media Sidebar */}
+<div className={`social-sidebar ${sidebarVisible ? "show" : "hide"}`}>
+
+  <button
+    className="sidebar-toggle"
+    onClick={() => setSidebarVisible(!sidebarVisible)}
+    aria-label="Toggle Sidebar"
+  >
+    {sidebarVisible ? <ChevronLeft size={18} /> : <ChevronRight size={18} />}
+  </button>
+
+  <button className="social-link contact-us" onClick={handleContactClick}>
+    Contact
+  </button>
+
+  <button className="social-link facebook" onClick={handleFacebookClick}>
+    <Facebook size={22} />
+  </button>
+
+  <button className="social-link instagram" onClick={handleInstagramClick}>
+    <Instagram size={22} />
+  </button>
+
+  <button className="social-link youtube" onClick={handleYouTubeClick}>
+    <Youtube size={22} />
+  </button>
+
 </div>
 
 
-<button
+
+{/* <button
   className="sidebar-toggle"
   onClick={() => setSidebarVisible(!sidebarVisible)}
   aria-label="Toggle Sidebar"
 >
   {sidebarVisible ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
-</button>
+</button> */}
 
       <main className="main-content">
         <Routes>
@@ -130,6 +160,7 @@ const App = () => {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/gallery" element={<Gallery />} />
+          
 
           <Route path="/brands/:brandName" element={<BrandProducts />} />
         </Routes>

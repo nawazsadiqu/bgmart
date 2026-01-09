@@ -240,15 +240,18 @@ html, body,
   position: fixed;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
   z-index: 1000;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
 }
 
+.social-sidebar.show {
+  transform: translate(0, -50%);
+}
 /* Hidden state */
-.social-sidebar.hidden {
+.social-sidebar.hide {
   transform: translate(-100%, -50%);
 }
 
@@ -257,17 +260,15 @@ html, body,
 ================================ */
 
 .social-link {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
+  border: none;
   display: flex;
   align-items: center;
+  padding: 0;
   justify-content: center;
-  border: none;
-  color: white;
-  font-size: 22px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
+  color: #fff;
 }
 
 .social-link:hover {
@@ -283,7 +284,7 @@ html, body,
   font-size: 14px;
   font-weight: 600;
   padding: 12px 0;
-  width: 60px;
+  width: 56px;
   height: 160px;
   display: flex;
   flex-direction: column;
