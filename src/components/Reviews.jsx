@@ -9,19 +9,28 @@ const reviewImages = [
   "/images/review5.jpeg",
 ];
 
+const googleMapsReviewUrl = "https://search.google.com/local/writereview?placeid=ChIJ83t-NCIZrjsRhZ2NxFMFwRk";
+
 const Reviews = () => {
   return (
     <section className="reviews-section">
       <h2 className="reviews-title">What Our Customers Say</h2>
-
-      <div className="reviews-grid">
+<div className="reviews-grid">
         {reviewImages.map((img, index) => (
-          <div className="review-card" key={index}>
-            <img src={img} alt={`Customer review ${index + 1}`} />
-          </div>
+          <a
+            href={googleMapsReviewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+            className="review-card-link"
+          >
+            <div className="review-card">
+              <img src={img} alt={`Customer review ${index + 1}`} />
+            </div>
+          </a>
         ))}
       </div>
-    </section>
+    </section>  
   );
 };
 
