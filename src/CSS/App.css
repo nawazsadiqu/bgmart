@@ -40,20 +40,21 @@ html, body,
         }
 
         .chat-tooltip {
-  position: absolute;
-  right: 100%;              /* 🔑 move to left */
-  margin-right: 12px;
-  background: transparent;
-  color: #d3bf0a;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateX(10px);
-  transition: all 0.3s ease;
-  pointer-events: none;
-}
+          position: absolute;
+          right: 100%;              /* 🔑 move to left */
+          margin-right: 12px;
+          background: transparent;
+          color: #d3bf0a;
+          padding: 6px 12px;
+          border-radius: 6px;
+          font-size: 0.85rem;
+          font-family: 'Dancing Script', cursive;
+          white-space: nowrap;
+          opacity: 0;
+          transform: translateX(10px);
+          transition: all 0.3s ease;
+          pointer-events: none;
+        }
 
 
         .chat-button-fixed:hover {

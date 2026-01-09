@@ -23,7 +23,7 @@ const BrandsCarousel = () => {
       slug: 'bosch',
       logo: '/images/Bosch-Logo1.jpg',
       description: 'German Engineering Excellence',
-      image: '/images/boschbanner.jpeg'
+      image: '/images/bosch-banner.webp'
     },
     {
       id: 2,
