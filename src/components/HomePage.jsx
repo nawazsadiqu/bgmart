@@ -9,7 +9,7 @@ const HomePage = () => {
         
         <div className="hero-content">
           <h1 className="hero-title">
-            Luxury Kitchen Appliances and Home Appliances
+            Luxury Kitchen Appliances <br />and Home Appliances
             
           </h1>
           <p className="hero-subtitle">
