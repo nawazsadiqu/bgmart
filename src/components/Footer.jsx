@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
@@ -31,8 +32,10 @@ const Footer = () => {
           <ul className="footer-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#stores">Find a Store</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            
+            <li>
+              <Link to="/contact-us">Contact Us</Link>
+            </li>
           </ul>
         </div>
         
@@ -73,7 +76,7 @@ const Footer = () => {
     rel="noopener noreferrer"
     className="footer-contact"
   >
-    <MapPin size={16} />B.G. CHIMNEY MART
+    <MapPin size={78} />B.G. CHIMNEY MART
 # 225/1, Ground Floor, Shivaramaiah Layout
 H.B.R. Layout, 3rd Block, Kalyan Nagar Post,
 Bengaluru - 560 043.

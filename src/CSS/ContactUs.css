@@ -1,7 +1,7 @@
 .contact-page {
   background: linear-gradient(180deg, #ffffff 0%, #cac4bb 100%);
   min-height: 100vh;
-  padding: 100px 20px;
+  padding: 100px 60px;
   color: #cfcfcf;
 }
 
@@ -15,7 +15,7 @@
 
 .contact-container h1 {
   font-size: 40px;
-  color: #d4af37;
+  color: #9e7b0a;
   margin-bottom: 30px;
 }
 
