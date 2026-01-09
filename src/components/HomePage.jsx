@@ -13,7 +13,7 @@ const HomePage = () => {
             
           </h1>
           <p className="hero-subtitle">
-            Multi brands like <b>BOSCH HAFELE FABER KAFF HINDWARE</b>
+            Multi brands like <b>BOSCH  HAFELE  FABER  KAFF  HINDWARE</b>
           </p>
           
       
