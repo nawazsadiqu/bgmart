@@ -123,7 +123,7 @@ const Testimonials = () => {
 
   return (
     <section className="motivation-section">
-      <h2 className="section-title">Our Motivation</h2>
+      <h2 className="section-title">What our costumers says </h2>
 
       <div className="reviews-container">
 
