@@ -371,15 +371,22 @@ body {
   .testimonials-viewport {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 10px;
     padding: 0 5px;
   }
 
+   .testimonials-track {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap; 
+   }
+
   .testimonial-card {
     flex: 0 0 80%;      /* card takes 80% of viewport */
-    max-width: 100px;   /* optional */
+    max-width: 80px;   /* optional */
     scroll-snap-align: start;
     margin: 0 5px;
     padding: 12px;
