@@ -1,9 +1,8 @@
 // Testimonials.jsx
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import "../CSS/Testimonials.css";
 
 const Testimonials = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
 
   const testimonials = [
     {
@@ -51,27 +50,17 @@ const Testimonials = () => {
     reviewCount: 54
   };
 
-  /* ========= SLIDER LOGIC (FIXED) ========= */
-  const nextSlide = () => {
-    setCurrentSlide((prev) =>
-      prev >= testimonials.length - 3 ? 0 : prev + 1
-    );
-  };
-
-  const previousSlide = () => {
-    setCurrentSlide((prev) =>
-      prev <= 0 ? testimonials.length - 3 : prev - 1
-    );
-  };
-
-  const goToSlide = (index) => setCurrentSlide(index);
-
-  const renderStars = (rating) =>
-    [...Array(5)].map((_, i) => (
-      <span key={i} className={`star ${i < rating ? "filled" : "empty"}`}>
+  /* ⭐ FIX 1: DEFINE renderStars */
+  const renderStars = (rating) => {
+    return [...Array(5)].map((_, i) => (
+      <span
+        key={i}
+        className={`star ${i < rating ? "filled" : "empty"}`}
+      >
         ★
       </span>
     ));
+  };
 
   const GoogleIcon = () => (
     <svg className="google-icon" viewBox="0 0 24 24">
@@ -82,34 +71,49 @@ const Testimonials = () => {
     </svg>
   );
 
+  /* ⭐ FIX 2: ATTACH ref TO VIEWPORT */
   const viewportRef = useRef(null);
 
-const scrollNext = () => {
-  const viewport = viewportRef.current;
-  if (viewport) {
-    const cardWidth = viewport.firstChild.offsetWidth + 10; // 10 = gap
-    viewport.scrollBy({ left: cardWidth, behavior: 'smooth' });
-  }
-};
+  const scrollNext = () => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
 
-const scrollPrev = () => {
-  const viewport = viewportRef.current;
-  if (viewport) {
-    const cardWidth = viewport.firstChild.offsetWidth + 10;
-    viewport.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-  }
-};
+    const card = viewport.querySelector(".testimonial-card");
+    if (!card) return;
+
+    const gap = 20;
+    viewport.scrollBy({
+      left: card.offsetWidth + gap,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollPrev = () => {
+    const viewport = viewportRef.current;
+    if (!viewport) return;
+
+    const card = viewport.querySelector(".testimonial-card");
+    if (!card) return;
+
+    const gap = 20;
+    viewport.scrollBy({
+      left: -(card.offsetWidth + gap),
+      behavior: "smooth",
+    });
+  };
 
   return (
     <section className="motivation-section">
       <h2 className="section-title">Our Motivation</h2>
 
       <div className="reviews-container">
-        {/* ===== LEFT FIXED COMPANY CARD ===== */}
+
+        {/* LEFT COMPANY CARD */}
         <div className="company-card">
           <div className="company-logo">
             <img src={companyData.logo} alt="Company Logo" />
           </div>
+
           <h3 className="company-name">{companyData.name}</h3>
 
           <div className="rating">
@@ -134,38 +138,45 @@ const scrollPrev = () => {
           </button>
         </div>
 
-        {/* ===== RIGHT FIXED WIDTH CAROUSEL ===== */}
-       <div className="testimonials-slider">
-  <button className="slider-arrow left" onClick={previousSlide}>
-    ‹
-  </button>
+        {/* RIGHT SLIDER */}
+        <div className="testimonials-slider">
 
- <div className="testimonials-viewport">
-  {testimonials.map((t) => (
-    <div key={t.id} className="testimonial-card">
-      <div className="testimonial-header">
-        <div className="reviewer-avatar">
-          <img src={t.avatar} alt={t.name} />
+          <button className="slider-arrow left" onClick={scrollPrev}>
+            ‹
+          </button>
+
+          <div className="testimonials-viewport" ref={viewportRef}>
+            <div className="testimonials-track">
+              {testimonials.map((t) => (
+                <div key={t.id} className="testimonial-card">
+                  <div className="testimonial-header">
+                    <div className="reviewer-avatar">
+                      <img src={t.avatar} alt={t.name} />
+                    </div>
+
+                    <div className="reviewer-info">
+                      <div className="reviewer-name">{t.name}</div>
+                      <div className="review-date">{t.date}</div>
+                    </div>
+
+                    <GoogleIcon />
+                  </div>
+
+                  <div className="review-stars">
+                    {renderStars(t.rating)}
+                  </div>
+
+                  <p className="review-text">{t.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <button className="slider-arrow right" onClick={scrollNext}>
+            ›
+          </button>
+
         </div>
-        <div className="reviewer-info">
-          <div className="reviewer-name">{t.name}</div>
-          <div className="review-date">{t.date}</div>
-        </div>
-        <GoogleIcon />
-      </div>
-
-      <div className="review-stars">{renderStars(t.rating)}</div>
-      <p className="review-text">{t.text}</p>
-    </div>
-  ))}
-</div>
-
-
-  <button className="slider-arrow right" onClick={nextSlide}>
-    ›
-  </button>
-</div>
-
       </div>
     </section>
   );
