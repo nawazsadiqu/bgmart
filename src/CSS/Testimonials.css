@@ -391,18 +391,12 @@ body {
     min-width: calc(50% - 15px);
   }
 }
-
 @media (max-width: 768px) {
-  /* Section title smaller */
-  .section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
   /* Testimonials slider adjustments */
   .testimonials-slider {
     max-width: 100%;
     padding: 0 10px;
+    position: relative;
   }
 
   .testimonials-viewport {
@@ -415,16 +409,30 @@ body {
     transition: transform 0.5s ease;
   }
 
-  /* Show 1 card per slide on mobile */
+  /* Testimonial card */
   .testimonial-card {
-    flex: 0 0 100%;
-    min-width: 100%;
-    padding: 10px;
+    flex: 0 0 80%;   /* card takes 80% of viewport */
+    max-width: 300px; /* optional max width */
+    margin: 0 10px;   /* spacing between cards */
     box-sizing: border-box;
-    font-size: 14px; /* slightly smaller text */
+    font-size: 14px;
+    padding: 15px;    /* inner padding */
+    white-space: normal; /* allow wrapping */
+    word-wrap: break-word; /* break long words if needed */
+    overflow-wrap: break-word;
   }
 
-  /* Reviewer info font adjustments */
+  /* Text styling */
+  .review-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #666;
+    max-width: 100%;
+    display: block;
+    word-break: break-word;
+  }
+
+  /* Reviewer info adjustments */
   .reviewer-name {
     font-size: 0.95rem;
   }
@@ -433,34 +441,15 @@ body {
     font-size: 0.8rem;
   }
 
-  .review-text {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
-
-  /* Arrows smaller and closer to the slider */
+  /* Slider arrows smaller and repositioned */
   .slider-arrow {
     width: 32px;
     height: 32px;
     font-size: 18px;
-    top: 35%; /* vertically center */
-  }
-
-  /* Header and motivation section padding adjustments */
-  .header {
-    padding: 50px 15px;
-  }
-
-  .motivation-section {
-    padding: 50px 15px;
-  }
-
-  /* Chat button smaller */
-  .chat-button {
-    padding: 10px 18px;
-    font-size: 14px;
+    top: 40%; /* vertically center relative to slider */
   }
 }
+
 
 
 @media (max-width: 480px) {
