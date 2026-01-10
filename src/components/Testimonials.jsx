@@ -82,6 +82,24 @@ const Testimonials = () => {
     </svg>
   );
 
+  const viewportRef = useRef(null);
+
+const scrollNext = () => {
+  const viewport = viewportRef.current;
+  if (viewport) {
+    const cardWidth = viewport.firstChild.offsetWidth + 10; // 10 = gap
+    viewport.scrollBy({ left: cardWidth, behavior: 'smooth' });
+  }
+};
+
+const scrollPrev = () => {
+  const viewport = viewportRef.current;
+  if (viewport) {
+    const cardWidth = viewport.firstChild.offsetWidth + 10;
+    viewport.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+  }
+};
+
   return (
     <section className="motivation-section">
       <h2 className="section-title">Our Motivation</h2>
@@ -122,32 +140,26 @@ const Testimonials = () => {
     ‹
   </button>
 
-  <div className="testimonials-viewport">
-    <div
-      className="testimonials-track"
-      style={{
-        transform: `translateX(-${currentSlide * (100 / 3)}%)`
-      }}
-    >
-      {testimonials.map((t) => (
-        <div key={t.id} className="testimonial-card">
-          <div className="testimonial-header">
-            <div className="reviewer-avatar">
-              <img src={t.avatar} alt={t.name} />
-            </div>
-            <div className="reviewer-info">
-              <div className="reviewer-name">{t.name}</div>
-              <div className="review-date">{t.date}</div>
-            </div>
-            <GoogleIcon />
-          </div>
-
-          <div className="review-stars">{renderStars(t.rating)}</div>
-          <p className="review-text">{t.text}</p>
+ <div className="testimonials-viewport">
+  {testimonials.map((t) => (
+    <div key={t.id} className="testimonial-card">
+      <div className="testimonial-header">
+        <div className="reviewer-avatar">
+          <img src={t.avatar} alt={t.name} />
         </div>
-      ))}
+        <div className="reviewer-info">
+          <div className="reviewer-name">{t.name}</div>
+          <div className="review-date">{t.date}</div>
+        </div>
+        <GoogleIcon />
+      </div>
+
+      <div className="review-stars">{renderStars(t.rating)}</div>
+      <p className="review-text">{t.text}</p>
     </div>
-  </div>
+  ))}
+</div>
+
 
   <button className="slider-arrow right" onClick={nextSlide}>
     ›
