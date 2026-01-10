@@ -166,7 +166,7 @@ body {
 
 .testimonials-viewport {
   overflow-x: hidden;
-  /* width: 100%; */
+  width: 100%;
   display:flex;
  
  
@@ -379,9 +379,8 @@ body {
   }
 
   .testimonial-card {
-    flex: 1 1 20%;               /* card takes 80% of viewport width */
-    max-width: 20%;              /* ensure width is correct */
-    min-width: 0;
+    flex: 0 0 80%;               /* card takes 80% of viewport width */
+    max-width: 80%;              /* ensure width is correct */
     scroll-snap-align: start;
     margin: 0;
     padding: 20px;
