@@ -28,6 +28,7 @@ html, body,
           border: none;
           padding: 14px 28px;
           font-size: 1rem;
+          gap: 10px;
           font-weight: 600;
           border-radius: 30px;
           color: #fff;
@@ -39,9 +40,9 @@ html, body,
           z-index: 999;
         }
 
-        .chat-tooltip {
+        /* .chat-tooltip {
           position: absolute;
-          right: 100%;              /* 🔑 move to left */
+          right: 100%;             
           margin-right: 12px;
           background: transparent;
           color: #d3bf0a;
@@ -54,7 +55,7 @@ html, body,
           transform: translateX(10px);
           transition: all 0.3s ease;
           pointer-events: none;
-        }
+        } */
 
 
         .chat-button-fixed:hover {
@@ -63,10 +64,15 @@ html, body,
           background-color: #20bd5a;
         }
 
-        .chat-button-fixed:hover .chat-tooltip {
+        .whatsapp-icon-inside {
+  width: 24px;
+  height: 24px;
+}
+
+        /* .chat-button-fixed:hover .chat-tooltip {
   opacity: 1;
   transform: translateX(0);
-}
+} */
 
         .chat-button-fixed:active {
           transform: translateY(-1px);

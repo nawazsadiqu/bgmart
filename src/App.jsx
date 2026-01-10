@@ -118,7 +118,12 @@ const App = () => {
         className="chat-button-fixed"
         onClick={handleWhatsAppChat}
       >
-        <span className="chat-tooltip">Chat with our sales executive</span>
+        {/* <span className="chat-tooltip">Chat with our sales executive</span> */}
+        <img
+        src="/images/whatsapp.png"  // replace with your icon path
+        alt="WhatsApp"
+        className="whatsapp-icon-inside"
+      />
         Chat Now
       </button>
     </div>
