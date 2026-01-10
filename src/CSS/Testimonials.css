@@ -412,7 +412,7 @@ body {
   /* Testimonial card */
   .testimonial-card {
     flex: 0 0 80%;   /* card takes 80% of viewport */
-    max-width: 300px; /* optional max width */
+    max-width: 100px; /* optional max width */
     margin: 0 10px;   /* spacing between cards */
     box-sizing: border-box;
     font-size: 14px;
