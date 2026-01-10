@@ -21,7 +21,7 @@ const Testimonials = () => {
       date: "4 months ago",
       rating: 5,
       text:
-        "One stop solution for all appliances. Excellent staff support, pricing, and installation. Much better experience compared to large retail chains."
+        "I recently renovated my home I was looking for a one shop where in u buy all the appliances. Lucky enough to find BG Chimney Mart. To be very specific I had been to Girihas, Relance Digital, Chroma but was not satisfied with how they treat customer very low and no proper response. But when I went to BG Chimney Mart I was happy they had all the products which I wanted.. it’s one stop solutions for all appliances.. sharing the glimpses of the products I bought.: steam oven from Hafele, Chimney from Bosch, Hob from Asko, undercounter purifier from AO Smith, Faucet and sink from Hafele, AC ‘ S from LG, Bosch Mixer, Kettle From Hafele, and finally a refrigerator from Samsung.. I like the sales person Rani she is so friendly. She also helped for the installation and after sales service. Please visit the store it’s the worth place ."
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const Testimonials = () => {
       date: "1 month ago",
       rating: 5,
       text:
-        "Wide selection, enthusiastic sales team, competitive pricing, and great follow-ups. Very pleasant buying experience."
+        "Recently Purchased lots of appliances for our new home and they have a wide selection , the sales team is also very enthusiastic and forthcoming . They have good understanding of the products they are selling , they follow up multiple times to ensure you are kept informed on the developments with order delivery etc, I was even called multiple times to check if the installation team showed up , their pricing is competitive, they try to match the price of the lowest quote as well. I had one Mr. Murthy who was dealing with me and this review is purely based on my pleasant experience interacting with him , i did not speak to anyone else but when i walked into the store they all were carrying a welcoming smile."
     },
     {
       id: 4,
@@ -39,25 +39,25 @@ const Testimonials = () => {
       date: "2 weeks ago",
       rating: 5,
       text:
-        "All leading brands available. Manager Murthy explained everything clearly. After-sales service is excellent."
+        "Household items of all leading brands are available for display in this show room.   Manger Murthy is a very nice person and give details about every item. Sales after service is also good. They offer very competitive prices. It's my favorite shop."
     },
     {
       id: 5,
-      name: "Naghabhushana Mk",
+      name: "Neeraja S",
       avatar: "/images/rev3.jpeg",
       date: "2 weeks ago",
       rating: 5,
       text:
-        "All leading brands available. Manager Murthy explained everything clearly. After-sales service is excellent."
+        "We had chosen BG Chimney Mart for our appliances for our new home.We had visited more stores in the vicinity and found BG Mart a comprehensive store with varied essential appliances and giving competitive rates for customers.We had purchased our Kitchen hob,chimney, geysers,RO water unit."
     },
     {
       id: 6,
-      name: "Naghabhushana Mk",
+      name: "Ravishankar mr",
       avatar: "/images/rev3.jpeg",
       date: "2 weeks ago",
       rating: 5,
       text:
-        "All leading brands available. Manager Murthy explained everything clearly. After-sales service is excellent."
+        "I visited and purchased water purifier. The Store was very nice and all displays there well explained and giving good service &  parking also there kindly visit any home needs."
     },
     
   ];
