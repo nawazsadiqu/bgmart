@@ -379,7 +379,7 @@ body {
   }
 
   .testimonial-card {
-    flex: 0 0 80%;               /* card takes 80% of viewport width */
+    flex: 0 0 100%;               /* card takes 80% of viewport width */
     max-width: 5%;              /* ensure width is correct */
     scroll-snap-align: start;
     margin: 0;
