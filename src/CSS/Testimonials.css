@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.header {
+  background: linear-gradient(135deg, #3d2a29 0%, #5a4140 100%);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.motivation-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: #2d5a5a;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.title-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 60px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ff8c42;
+}
+
+.line {
+  width: 60px;
+  height: 3px;
+  background-color: #ff8c42;
+}
+
+.reviews-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Company Card Styles */
+  company-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  text-align: center;
+
+  position: sticky;
+  top: 120px; /* stays visible below header */
+  height: fit-content;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  background: #f0f0f0;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.company-name {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.rating-number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  font-size: 24px;
+}
+
+.star {
+  color: #ff8c42;
+}
+
+.star.half {
+  color: #ff8c42;
+  position: relative;
+}
+
+.review-count {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.powered-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #999;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.google-logo {
+  font-weight: 600;
+}
+
+.google-logo .g-blue { 
+  color: #4285f4; 
+}
+
+.google-logo .g-red { 
+  color: #ea4335; 
+}
+
+.google-logo .g-yellow { 
+  color: #fbbc04; 
+}
+
+.google-logo .g-green { 
+  color: #34a853; 
+}
+
+.review-button {
+  background: #4285f4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+
+.review-button:hover {
+  background: #3367d6;
+}
+
+/* Testimonials Slider Styles */
+.testimonials-slider {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.testimonials-viewport {
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonials-track {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  height: 100%;
+   width: calc(100% * 2);
+  transition: transform 0.5s ease;
+}
+
+.testimonial-card {
+  max-width: 280px;
+  height: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.reviewer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.reviewer-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #4285f4;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.review-date {
+  color: #999;
+  font-size: 13px;
+}
+
+.google-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
+
+.review-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.review-stars .star.filled {
+  color: #ff8c42;
+}
+
+.review-stars .star.empty {
+  color: #ddd;
+}
+
+.review-text {
+  color: #666;
+  line-height: 1.6;
+  font-size: 15px;
+  height: 60px;
+}
+
+/* Slider Controls */
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.slider-arrow.left {
+  left: -22px;
+}
+
+.slider-arrow.right {
+  right: -22px;
+}
+
+.slider-arrow:hover {
+  background: #ff8c42;
+  color: white;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.slider-dot.active {
+  background: #4285f4;
+  width: 30px;
+  border-radius: 5px;
+}
+
+/* WhatsApp Chat Button */
+.chat-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+  z-index: 1000;
+}
+
+.chat-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-icon {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #25d366;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    min-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .testimonial-card {
+    min-width: 100%;
+  }
+
+  .header {
+    padding: 60px 20px;
+  }
+
+  .motivation-section {
+    padding: 60px 15px;
+  }
+
+  .chat-button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .company-card {
+    padding: 20px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+}

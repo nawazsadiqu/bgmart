@@ -39,7 +39,7 @@
 
 /* Wave effect using nth-child */
 .review-card:nth-child(1) {
-  transform: translateY(50px);
+  transform: translateY(0px);
 }
 
 .review-card:nth-child(2) {
@@ -47,7 +47,7 @@
 }
 
 .review-card:nth-child(3) {
-  transform: translateY(65px);
+  transform: translateY(60px);
 }
 
 .review-card:nth-child(4) {

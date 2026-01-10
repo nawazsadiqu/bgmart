@@ -13,6 +13,7 @@ import { Facebook, Instagram, Youtube } from "lucide-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Gallery from "./components/Gallery";
 import Reviews from "./components/Reviews";
+import Testimonials from "./components/Testimonials";
 
 
 const App = () => {
@@ -99,7 +100,7 @@ const App = () => {
                 <section id="home"><HomePage /></section>
                 <section id="brands"><BrandsCarousel /></section>
                 <section id="products"><Products /></section>
-                 <section id="reviews"><Reviews /></section>
+                 <section id="testimonials"><Testimonials /></section>
                 <section id="contact"><Footer /></section>
               </>
             }
