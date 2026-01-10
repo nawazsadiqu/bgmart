@@ -356,87 +356,35 @@ body {
   }
 }
 @media (max-width: 768px) {
-  /* Container */
-  .reviews-container {
-    display: flex;
-    flex-direction: column; /* stack company + testimonials */
-    align-items: center;    /* center everything */
-    gap: 20px;
-  }
-
-  /* Company card */
-  .company-card {
-    width: 300px;        /* fixed width */
-    max-width: 90%;      /* responsive fallback */
-    margin: 0 auto;      /* center horizontally */
-    text-align: center;  /* center text inside */
-  }
-
-  .company-logo {
-    margin: 0 auto 15px;
-  }
-
-  /* Testimonial slider container */
-  .testimonials-slider {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 5px;
-    position: relative;
-  }
-
-  /* Scrollable viewport */
   .testimonials-viewport {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; /* snap each card */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
     gap: 10px;
-    -webkit-overflow-scrolling: touch; /* smooth scroll for iOS */
+    padding: 0 5px;
   }
 
-  /* Track wrapper (optional, can keep width auto) */
-  .testimonials-track {
-    display: flex;
-    gap: 10px;
-    width: auto;
-  }
-
-  /* Testimonial card */
   .testimonial-card {
-    flex: 0 0 80%;       /* card takes 80% of viewport width */
-    max-width: 280px;    /* reasonable max width */
+    flex: 0 0 80%;      /* card takes 80% of viewport */
+    max-width: 280px;   /* optional */
+    scroll-snap-align: start;
     margin: 0 5px;
-    box-sizing: border-box;
-    font-size: 14px;
     padding: 12px;
-    white-space: normal; 
-    word-wrap: break-word; 
-    overflow-wrap: break-word;
+    box-sizing: border-box;
     border-radius: 10px;
-    scroll-snap-align: start; /* snap each card */
+    white-space: normal;
+    word-wrap: break-word;
   }
 
-  /* Text styling */
+  /* Optional: adjust text size */
   .review-text {
     font-size: 0.85rem;
     line-height: 1.4;
-    color: #666;
-    display: block;
     word-break: break-word;
-    max-width: 100%;
   }
 
-  /* Reviewer info adjustments */
-  .reviewer-name {
-    font-size: 0.9rem;
-  }
-
-  .review-date {
-    font-size: 0.75rem;
-  }
-
-  /* Hide slider arrows on mobile */
+  /* hide arrows on mobile */
   .slider-arrow {
     display: none;
   }
