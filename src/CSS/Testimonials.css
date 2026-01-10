@@ -62,15 +62,17 @@ body {
 }
 
 /* Company Card Styles */
-  company-card {
+ .company-card {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-  text-align: center;
 
-  position: sticky;
-  top: 120px; /* stays visible below header */
+  text-align: center;  /* ✅ Center all text */
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center; /* optional: center vertically inside card */
   height: fit-content;
 }
 
@@ -79,111 +81,72 @@ body {
   height: 80px;
   background: #f0f0f0;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  
 }
 
 .company-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .company-name {
   font-size: 20px;
   color: #666;
-  margin-bottom: 15px;
+  margin-bottom: 10px;  /* reduced for spacing consistency */
   font-weight: 500;
+  text-align: center;   /* ensure name is centered */
 }
 
 .rating {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* ✅ center stars and rating number */
   gap: 5px;
-  margin-bottom: 15px;
-}
-
-.rating-number {
-  font-size: 36px;
-  font-weight: 700;
-  color: #333;
-}
-
-.stars {
-  display: flex;
-  gap: 3px;
-  font-size: 24px;
-}
-
-.star {
-  color: #ff8c42;
-}
-
-.star.half {
-  color: #ff8c42;
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .review-count {
   color: #999;
   font-size: 14px;
   margin-bottom: 20px;
+  text-align: center;  /* ✅ center text */
 }
 
 .powered-by {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; /* ✅ center powered by text */
   gap: 5px;
   color: #999;
   font-size: 13px;
   margin-bottom: 20px;
 }
 
-.google-logo {
-  font-weight: 600;
-}
-
-.google-logo .g-blue { 
-  color: #4285f4; 
-}
-
-.google-logo .g-red { 
-  color: #ea4335; 
-}
-
-.google-logo .g-yellow { 
-  color: #fbbc04; 
-}
-
-.google-logo .g-green { 
-  color: #34a853; 
-}
-
 .review-button {
   background: #4285f4;
-  color: white;
   border: none;
   padding: 12px 24px;
   border-radius: 25px;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  display: flex;
+  display: flex; /* keeps button contents in line */
   align-items: center;
+  justify-content: center; /* ✅ center text inside button */
   gap: 8px;
-  margin: 0 auto;
+  margin: 0 auto; /* center button itself */
   transition: background 0.3s;
 }
 
 .review-button:hover {
-  background: #3367d6;
+    background: yellow;
 }
-
 /* Testimonials Slider Styles */
 .testimonials-slider {
   position: relative;
