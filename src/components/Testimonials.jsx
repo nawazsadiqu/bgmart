@@ -26,7 +26,7 @@ const Testimonials = () => {
     {
       id: 3,
       name: "Aditya Kini",
-      avatar: "/images/rev1.jpeg",
+      avatar: "/images/rev3.jpeg",
       date: "1 month ago",
       rating: 5,
       text:
@@ -45,7 +45,7 @@ const Testimonials = () => {
       id: 5,
       name: "Neeraja S",
       avatar: "/images/rev3.jpeg",
-      date: "2 weeks ago",
+      date: "3 months ago",
       rating: 5,
       text:
         "We had chosen BG Chimney Mart for our appliances for our new home.We had visited more stores in the vicinity and found BG Mart a comprehensive store with varied essential appliances and giving competitive rates for customers.We had purchased our Kitchen hob,chimney, geysers,RO water unit."
@@ -54,7 +54,7 @@ const Testimonials = () => {
       id: 6,
       name: "Ravishankar mr",
       avatar: "/images/rev3.jpeg",
-      date: "2 weeks ago",
+      date: "3 weeks ago",
       rating: 5,
       text:
         "I visited and purchased water purifier. The Store was very nice and all displays there well explained and giving good service &  parking also there kindly visit any home needs."
