@@ -96,6 +96,86 @@ const BrandsCarousel = () => {
       logo: '/images/hindware-logo.png',
       description: 'Home innovation limited',
       image: '/images/hindware-banner.png'
+    },
+    {
+      id: 11,
+      name: 'ZERO B',
+      slug: 'zerob',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 12,
+      name: 'BLANCO',
+      slug: 'blanco',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 13,
+      name: 'FRANKE',
+      slug: 'franke',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 14,
+      name: 'KITCHEN AID',
+      slug: 'kitchenaid',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 15,
+      name: 'DYSON',
+      slug: 'dyson',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 16,
+      name: 'BLOW HOT',
+      slug: 'blowhot',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 17,
+      name: 'HAFELE',
+      slug: 'blanco',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 18,
+      name: 'KENT',
+      slug: 'kent',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 19,
+      name: 'ATOMBERG',
+      slug: 'atomberg',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
+    },
+    {
+      id: 20,
+      name: 'PRESTIGE',
+      slug: 'prestige',
+      logo: '/images/hindware-logo.png',
+      description: 'Home innovation limited',
+      image: '/images/hindware-banner.png'
     }
   ];
 
