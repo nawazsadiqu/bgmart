@@ -111,7 +111,7 @@ const BrandsCarousel = () => {
       slug: 'blanco',
       logo: '/images/hindware-logo.png',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/blanco-banner.jpeg'
     },
     {
       id: 13,
@@ -143,7 +143,7 @@ const BrandsCarousel = () => {
       slug: 'blowhot',
       logo: '/images/hindware-logo.png',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/blowhot-banner.jpeg'
     },
     {
       id: 17,
@@ -151,7 +151,7 @@ const BrandsCarousel = () => {
       slug: 'blanco',
       logo: '/images/hindware-logo.png',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/hafele-banner.jpeg'
     },
     {
       id: 18,
