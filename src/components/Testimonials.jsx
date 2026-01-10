@@ -40,6 +40,15 @@ const Testimonials = () => {
       rating: 5,
       text:
         "All leading brands available. Manager Murthy explained everything clearly. After-sales service is excellent."
+    },
+    {
+      id: 5,
+      name: "Naghabhushana Mk",
+      avatar: "/images/rev3.jpeg",
+      date: "2 weeks ago",
+      rating: 5,
+      text:
+        "All leading brands available. Manager Murthy explained everything clearly. After-sales service is excellent."
     }
   ];
 
