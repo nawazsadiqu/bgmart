@@ -146,31 +146,23 @@ const Testimonials = () => {
           </button>
 
           <div className="testimonials-viewport" ref={viewportRef}>
-            <div className="testimonials-track">
-              {testimonials.map((t) => (
-                <div key={t.id} className="testimonial-card">
-                  <div className="testimonial-header">
-                    <div className="reviewer-avatar">
-                      <img src={t.avatar} alt={t.name} />
-                    </div>
-
-                    <div className="reviewer-info">
-                      <div className="reviewer-name">{t.name}</div>
-                      <div className="review-date">{t.date}</div>
-                    </div>
-
-                    <GoogleIcon />
-                  </div>
-
-                  <div className="review-stars">
-                    {renderStars(t.rating)}
-                  </div>
-
-                  <p className="review-text">{t.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+  {testimonials.map((t) => (
+    <div key={t.id} className="testimonial-card">
+      <div className="testimonial-header">
+        <div className="reviewer-avatar">
+          <img src={t.avatar} alt={t.name} />
+        </div>
+        <div className="reviewer-info">
+          <div className="reviewer-name">{t.name}</div>
+          <div className="review-date">{t.date}</div>
+        </div>
+        <GoogleIcon />
+      </div>
+      <div className="review-stars">{renderStars(t.rating)}</div>
+      <p className="review-text">{t.text}</p>
+    </div>
+  ))}
+</div>
 
           <button className="slider-arrow right" onClick={scrollNext}>
             ›

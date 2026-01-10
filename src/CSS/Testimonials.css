@@ -166,7 +166,7 @@ body {
 
 .testimonials-viewport {
   overflow-x: hidden;
-  width: 100%;
+  /* width: 100%; */
   display:flex;
  
  
@@ -370,42 +370,28 @@ body {
 @media (max-width: 768px) {
   .testimonials-viewport {
     display: flex;
-    overflow-x: auto;
+    overflow-x: auto;            /* enable horizontal swipe */
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     gap: 10px;
-    padding: 0 5px;
+    padding: 0 10px;
   }
 
-   .testimonials-track {
-    display: flex;
-    gap: 10px;
-    flex-wrap: nowrap; 
-   }
-
   .testimonial-card {
-    flex: 0 0 80%;      /* card takes 80% of viewport */
-    max-width: 80px;   /* optional */
+    flex: 0 0 80%;               /* card takes 80% of viewport width */
+    max-width: 80%;              /* ensure width is correct */
     scroll-snap-align: start;
-    margin: 0 5px;
-    padding: 12px;
+    margin: 0;
+    padding: 20px;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 12px;
     white-space: normal;
     word-wrap: break-word;
   }
 
-  /* Optional: adjust text size */
-  .review-text {
-    font-size: 0.85rem;
-    line-height: 1.4;
-    word-break: break-word;
-  }
-
-  /* hide arrows on mobile */
   .slider-arrow {
-    display: none;
+    display: none;               /* hide arrows on mobile */
   }
 }
 
