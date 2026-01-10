@@ -35,7 +35,7 @@ const Testimonials = () => {
     {
       id: 4,
       name: "Naghabhushana Mk",
-      avatar: "/images/rev3.jpeg",
+      avatar: "/images/rev1.jpeg",
       date: "2 weeks ago",
       rating: 5,
       text:
@@ -44,7 +44,7 @@ const Testimonials = () => {
     {
       id: 5,
       name: "Neeraja S",
-      avatar: "/images/rev3.jpeg",
+      avatar: "/images/rev1.jpeg",
       date: "3 months ago",
       rating: 5,
       text:
@@ -53,7 +53,7 @@ const Testimonials = () => {
     {
       id: 6,
       name: "Ravishankar mr",
-      avatar: "/images/rev3.jpeg",
+      avatar: "/images/rev2.jpeg",
       date: "3 weeks ago",
       rating: 5,
       text:
