@@ -356,39 +356,61 @@ body {
   }
 }
 @media (max-width: 768px) {
+  /* Container */
+  .reviews-container {
+    display: flex;
+    flex-direction: column; /* stack company + testimonials */
+    align-items: center;    /* center everything */
+    gap: 20px;
+  }
+
+  /* Company card */
+  .company-card {
+    width: 300px;        /* fixed width */
+    max-width: 90%;      /* responsive fallback */
+    margin: 0 auto;      /* center horizontally */
+    text-align: center;  /* center text inside */
+  }
+
+  .company-logo {
+    margin: 0 auto 15px;
+  }
+
+  /* Testimonial slider container */
   .testimonials-slider {
+    width: 100%;
     max-width: 100%;
     padding: 0 5px;
     position: relative;
   }
 
-  /* Make the viewport scrollable */
+  /* Scrollable viewport */
   .testimonials-viewport {
+    display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-     display: flex;
     scroll-behavior: smooth;
-    scroll-snap-type: x mandatory; /* snapping effect */
-    display: flex;
+    scroll-snap-type: x mandatory; /* snap each card */
     gap: 10px;
     -webkit-overflow-scrolling: touch; /* smooth scroll for iOS */
   }
 
+  /* Track wrapper (optional, can keep width auto) */
   .testimonials-track {
     display: flex;
     gap: 10px;
-     width: auto;
+    width: auto;
   }
 
   /* Testimonial card */
   .testimonial-card {
-    flex: 0 0 70%;      /* narrower card, takes 70% of viewport */
-    max-width: 120px;   /* optional max width */
-    margin: 0 5px;      /* spacing between cards */
+    flex: 0 0 80%;       /* card takes 80% of viewport width */
+    max-width: 280px;    /* reasonable max width */
+    margin: 0 5px;
     box-sizing: border-box;
     font-size: 14px;
-    padding: 12px;      /* inner padding */
-    white-space: normal; /* allow wrapping */
+    padding: 12px;
+    white-space: normal; 
     word-wrap: break-word; 
     overflow-wrap: break-word;
     border-radius: 10px;
@@ -419,6 +441,7 @@ body {
     display: none;
   }
 }
+
 
 
 
