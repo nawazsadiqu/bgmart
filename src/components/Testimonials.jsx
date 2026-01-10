@@ -1,5 +1,5 @@
 // Testimonials.jsx
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../CSS/Testimonials.css";
 
 const Testimonials = () => {
