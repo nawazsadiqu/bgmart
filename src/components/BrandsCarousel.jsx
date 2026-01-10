@@ -101,7 +101,7 @@ const BrandsCarousel = () => {
       id: 11,
       name: 'ZERO B',
       slug: 'zerob',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/zerob-logo.jpeg',
       description: 'Home innovation limited',
       image: '/images/hindware-banner.png'
     },
@@ -117,7 +117,7 @@ const BrandsCarousel = () => {
       id: 13,
       name: 'FRANKE',
       slug: 'franke',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/franke-logo.jpeg',
       description: 'Home innovation limited',
       image: '/images/hindware-banner.png'
     },
@@ -125,7 +125,7 @@ const BrandsCarousel = () => {
       id: 14,
       name: 'KITCHEN AID',
       slug: 'kitchenaid',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/kitchenaid-logo.jpeg',
       description: 'Home innovation limited',
       image: '/images/hindware-banner.png'
     },
@@ -133,7 +133,7 @@ const BrandsCarousel = () => {
       id: 15,
       name: 'DYSON',
       slug: 'dyson',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/dyson-logo.jpeg',
       description: 'Home innovation limited',
       image: '/images/hindware-banner.png'
     },
