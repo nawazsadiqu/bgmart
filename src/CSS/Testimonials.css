@@ -366,6 +366,7 @@ body {
   .testimonials-viewport {
     overflow-x: auto;
     overflow-y: hidden;
+     display: flex;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory; /* snapping effect */
     display: flex;
@@ -376,6 +377,7 @@ body {
   .testimonials-track {
     display: flex;
     gap: 10px;
+     width: auto;
   }
 
   /* Testimonial card */
