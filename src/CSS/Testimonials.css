@@ -369,38 +369,30 @@ body {
 }
 @media (max-width: 768px) {
   .testimonials-viewport {
-    display: flex;
-    overflow-x: auto;
+    overflow-x: auto;          /* 🔥 ENABLE SWIPE */
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    display: flex;
+  }
+
+  .testimonials-track {
+    display: flex;
     gap: 10px;
-    padding: 0 5px;
   }
 
   .testimonial-card {
-    flex: 0 0 80%;      /* card takes 80% of viewport */
-    max-width: 100px;   /* optional */
+    flex: 0 0 80%;             /* show ~1.2 cards */
+    max-width: 80%;
     scroll-snap-align: start;
-    margin: 0 5px;
-    padding: 12px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    white-space: normal;
-    word-wrap: break-word;
   }
 
-  /* Optional: adjust text size */
-  .review-text {
-    font-size: 0.85rem;
-    line-height: 1.4;
-    word-break: break-word;
-  }
-
-  /* hide arrows on mobile */
+  /* Hide arrows on mobile */
   .slider-arrow {
     display: none;
   }
 }
+
 
 
 
