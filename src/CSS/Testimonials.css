@@ -392,63 +392,68 @@ body {
   }
 }
 @media (max-width: 768px) {
-  /* Testimonials slider adjustments */
   .testimonials-slider {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 5px;
     position: relative;
   }
 
+  /* Make the viewport scrollable */
   .testimonials-viewport {
-    overflow: hidden;
-    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory; /* snapping effect */
+    display: flex;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch; /* smooth scroll for iOS */
   }
 
   .testimonials-track {
     display: flex;
-    transition: transform 0.5s ease;
+    gap: 10px;
   }
 
   /* Testimonial card */
   .testimonial-card {
-    flex: 0 0 80%;   /* card takes 80% of viewport */
-    max-width: 40px; /* optional max width */
-    margin: 0 10px;   /* spacing between cards */
+    flex: 0 0 70%;      /* narrower card, takes 70% of viewport */
+    max-width: 250px;   /* optional max width */
+    margin: 0 5px;      /* spacing between cards */
     box-sizing: border-box;
     font-size: 14px;
-    padding: 15px;    /* inner padding */
+    padding: 12px;      /* inner padding */
     white-space: normal; /* allow wrapping */
-    word-wrap: break-word; /* break long words if needed */
+    word-wrap: break-word; 
     overflow-wrap: break-word;
+    border-radius: 10px;
+    scroll-snap-align: start; /* snap each card */
   }
 
   /* Text styling */
   .review-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.4;
     color: #666;
-    max-width: 100%;
     display: block;
     word-break: break-word;
+    max-width: 100%;
   }
 
   /* Reviewer info adjustments */
   .reviewer-name {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .review-date {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
-  /* Slider arrows smaller and repositioned */
+  /* Hide slider arrows on mobile */
   .slider-arrow {
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
-    top: 40%; /* vertically center relative to slider */
+    display: none;
   }
 }
+
 
 
 
