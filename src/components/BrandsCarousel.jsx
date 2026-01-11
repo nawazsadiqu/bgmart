@@ -119,13 +119,13 @@ const BrandsCarousel = () => {
       slug: 'franke',
       logo: '/images/franke-logo.jpeg',
       description: 'Home innovation limited',
-      image: '/images/franke-banner.webp'
+      image: '/images/Franke-Banner.png'
     },
     {
       id: 14,
       name: 'KITCHEN AID',
       slug: 'kitchenaid',
-      logo: '/images/kitchenaid-logo.jpeg',
+      logo: '/images/kitchenaid-logo.png',
       description: 'Home innovation limited',
       image: '/images/kitchenaid-banner.jpg'
     },
@@ -157,25 +157,25 @@ const BrandsCarousel = () => {
       id: 18,
       name: 'KENT',
       slug: 'kent',
-      logo: '/images/kent-logo.jpeg',
+      logo: '/images/kent-logo.jpg',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/kent-banner.jpg'
     },
     {
       id: 19,
       name: 'ATOMBERG',
       slug: 'atomberg',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/atomber-logo.jpg',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/atomberg-banner.jpg'
     },
     {
       id: 20,
       name: 'PRESTIGE',
       slug: 'prestige',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/prestige-logo.png',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/prestige-banner.jpeg'
     }
   ];
 
