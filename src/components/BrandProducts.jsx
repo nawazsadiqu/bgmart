@@ -258,7 +258,7 @@ const brandProductsData = {
       id: 6, name: "Collectis", image: "/images/blanco-collectis.png",  description: "Sorting System"
     }, 
     {
-      id: 7, name: "Daloga", image: "/images/blanco-daloga.png", description: "Clear lines – maximum capacity"
+      id: 7, name: "Dalago", image: "/images/blanco-dalago.png", description: "Clear lines – maximum capacity"
     }, 
     {
       id: 8, name: "Dana", image: "/images/blanco-dana.png",  description: "Large capacity in a small space"
