@@ -307,7 +307,7 @@ const brandProductsData = {
       id: 6, name: "TRENDY", image: "/images/kitchenaid-6.jpg",  description: "wooden kit"
     }, 
   ],
-  kitchenaid: [
+  dyson: [
     {
       id: 1, name: "Dyson Products", image: "/images/dyson-1.jpg",  description: "Vaccum cleaner , Hair dryer , Purifier."
     },
