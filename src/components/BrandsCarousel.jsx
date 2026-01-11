@@ -173,7 +173,7 @@ const BrandsCarousel = () => {
       id: 20,
       name: 'PRESTIGE',
       slug: 'prestige',
-      logo: '/images/prestige-logo.png',
+      logo: '/images/prestige-logo.jpeg',
       description: 'Home innovation limited',
       image: '/images/prestige-banner.jpeg'
     }
