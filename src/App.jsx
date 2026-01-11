@@ -31,7 +31,7 @@ const App = () => {
 
   const handleWhatsAppChat = () => {
     const phoneNumber = "917795325616"; // country code + number (NO +)
-    const message = "Hello, I am interested in your products.";
+    const message = "Hello, I am interested in your kitchen appliances products.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
