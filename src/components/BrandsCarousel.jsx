@@ -102,14 +102,14 @@ const BrandsCarousel = () => {
       name: 'ZERO B',
       slug: 'zerob',
       logo: '/images/zerob-logo.jpeg',
-      description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      description: 'Pure water solutions',
+      image: '/images/zerob-banner.jpeg'
     },
     {
       id: 12,
       name: 'BLANCO',
       slug: 'blanco',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/blanco-logo.png',
       description: 'Home innovation limited',
       image: '/images/blanco-banner.jpeg'
     },
@@ -119,7 +119,7 @@ const BrandsCarousel = () => {
       slug: 'franke',
       logo: '/images/franke-logo.jpeg',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/franke-banner.webp'
     },
     {
       id: 14,
@@ -127,7 +127,7 @@ const BrandsCarousel = () => {
       slug: 'kitchenaid',
       logo: '/images/kitchenaid-logo.jpeg',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/kitchenaid-banner.jpg'
     },
     {
       id: 15,
@@ -135,13 +135,13 @@ const BrandsCarousel = () => {
       slug: 'dyson',
       logo: '/images/dyson-logo.jpeg',
       description: 'Home innovation limited',
-      image: '/images/hindware-banner.png'
+      image: '/images/dyson-banner.jpg'
     },
     {
       id: 16,
       name: 'BLOW HOT',
       slug: 'blowhot',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/blowhot-logo.jpg',
       description: 'Home innovation limited',
       image: '/images/blowhot-banner.jpeg'
     },
@@ -149,7 +149,7 @@ const BrandsCarousel = () => {
       id: 17,
       name: 'HAFELE',
       slug: 'blanco',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/hafele-logo.jfif',
       description: 'Home innovation limited',
       image: '/images/hafele-banner.jpeg'
     },
@@ -157,7 +157,7 @@ const BrandsCarousel = () => {
       id: 18,
       name: 'KENT',
       slug: 'kent',
-      logo: '/images/hindware-logo.png',
+      logo: '/images/kent-logo.jpeg',
       description: 'Home innovation limited',
       image: '/images/hindware-banner.png'
     },
