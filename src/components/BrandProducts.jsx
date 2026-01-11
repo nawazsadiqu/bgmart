@@ -412,22 +412,22 @@ const brandProductsData = {
   ],
    prestige: [
     {
-      id: 1, name: "Pressure Cooker", image: "/images/atom-1.jpg",  description: "5 L , 3 L ,2 L , Outerlid induction bottom pressure."
+      id: 1, name: "Pressure Cooker", image: "/images/prestige-1.webp",  description: "5 L , 3 L ,2 L , Outerlid induction bottom pressure."
     },
     {
-      id: 2, name: "Electric Induction ", image: "/images/atom-2.jpg", description: "Prestige PIC 1.0 V2 1900 Watts Indian Menu Options Induction."
+      id: 2, name: "Electric Induction ", image: "/images/prestige-2.webp", description: "Prestige PIC 1.0 V2 1900 Watts Indian Menu Options Induction."
     },
     {
-      id: 3, name: " Chimney", image: "/images/atom-3.webp",  description: "Prestige Provo 900 Kitchen Hood Chimney - Powerful Suction "
+      id: 3, name: " Chimney", image: "/images/prestige-3.webp",  description: "Prestige Provo 900 Kitchen Hood Chimney - Powerful Suction "
     },
     {
-      id: 4, name: "Mixer Grinder", image: "/images/atom-4.webp",  description: "Prestige Stylo 750W Mixer Grinder with 3 ss Jars."
+      id: 4, name: "Mixer Grinder", image: "/images/prestige-4.webp",  description: "Prestige Stylo 750W Mixer Grinder with 3 ss Jars."
     },
     {
-      id: 5, name: "Mixer Grinder", image: "/images/atom-5.webp",  description: "Prestige 550 Watts Supreme Mixer Grinder with 3 Stainless."
+      id: 5, name: "Mixer Grinder", image: "/images/prestige-5.webp",  description: "Prestige 550 Watts Supreme Mixer Grinder with 3 Stainless."
     },
     {
-      id: 6, name: "Gas Stove", image: "/images/atom-6.webp",  description: "Prestige Svachh Neo Toughened Glasstop Liftable Burners Gas."
+      id: 6, name: "Gas Stove", image: "/images/prestige-6.webp",  description: "Prestige Svachh Neo Toughened Glasstop Liftable Burners Gas."
     }, 
   ],
 
