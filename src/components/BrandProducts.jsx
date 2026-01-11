@@ -295,16 +295,36 @@ const brandProductsData = {
       id: 2, name: " Watt stand mixer", image: "/images/kitchenaid-2.jpg", description: "  Red"
     },
     {
-      id: 3, name: "Baking Mixer", image: "/images/kitchenaid-3.webp",  description: " stainless steel brushed 600x468mm, X BRUSHED/SATIN, 3 1/2 , no overflow,with waste kit"
+      id: 3, name: "Baking Mixer", image: "/images/kitchenaid-3.webp",  description: " stainless golden"
     },
     {
-      id: 4, name: "INSTI", image: "/images/kitchenaid-4.jpeg",  description: "with Waste Kit,no overflow,no drainer, multipacking with 4 naked sinks."
+      id: 4, name: "INSTI", image: "/images/kitchenaid-4.jpeg",  description: "Stainless silver."
     },
     {
-      id: 5, name: "OMNI", image: "/images/kitchenaid-5.webp",  description: "with Waste Kit,no overflow,no drainer, multipacking with 4 naked sinks"
+      id: 5, name: "OMNI", image: "/images/kitchenaid-5.webp",  description: "Baby pink"
     },
     {
-      id: 6, name: "TRENDY", image: "/images/kitchenaid-6.jpg",  description: "TRX 621 steel brushed621 1175x500mm, X BRUSHED/SATIN, 3 1/2 , reversible, no overflow, with waste kit"
+      id: 6, name: "TRENDY", image: "/images/kitchenaid-6.jpg",  description: "wooden kit"
+    }, 
+  ],
+  kitchenaid: [
+    {
+      id: 1, name: "Dyson Products", image: "/images/dyson-1.jpg",  description: "Vaccum cleaner , Hair dryer , Purifier."
+    },
+    {
+      id: 2, name: " Multi styler and Dryer", image: "/images/dyson-2.jpg", description: "All hair conditioning products in on Go."
+    },
+    {
+      id: 3, name: "Dyson Products", image: "/images/dyson-4.png",  description: "Various products form vaccum cleaner to hair dryer."
+    },
+    {
+      id: 4, name: "Dyson Products", image: "/images/dyson-5.jpg",  description: "Various products form vaccum cleaner to hair dryer."
+    },
+    {
+      id: 5, name: "Vaccum cleaner ", image: "/images/dyson-6.webp",  description: "sleek ble and black covered."
+    },
+    {
+      id: 6, name: "Hair Smoothener", image: "/images/dyson-7.webp",  description: "Silver and matt black covered Stylish Smoothener"
     }, 
   ],
 };
