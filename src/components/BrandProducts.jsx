@@ -266,28 +266,25 @@ const brandProductsData = {
   ],
   franke: [
     {
-      id: 1, name: "Adira", image: "/images/franke-bwx.png",  description: "Modern design with superior functionality"
+      id: 1, name: "BWX 220", image: "/images/franke-bwx.jpg",  description: " stainless steel, PVD coating color copper and nanocoating, flushmount/slimtop and undermount"
     },
     {
-      id: 2, name: " Andano", image: "/images/blanco-andano.png", description: " Functional Elegance - A stainless steel bowl with everything you need."
+      id: 2, name: " BXM 210", image: "/images/franke-bxm.jpg", description: "  stainless steel, PVD coating color anthracite and nanocoating, flushmount/slimtop."
     },
     {
-      id: 3, name: "Axia III", image: "/images/blanco-axia.png",  description: "The AXEN Concept: uniquely ergonomic"
+      id: 3, name: "GRAND", image: "/images/franke-grand.jpg",  description: " stainless steel brushed 600x468mm, X BRUSHED/SATIN, 3 1/2 , no overflow,with waste kit"
     },
     {
-      id: 4, name: "Axis", image: "/images/blanco-axis.png",  description: "Ergonomics and efficiency define the tried and tested AXen concept."
+      id: 4, name: "INSTI", image: "/images/franke-insti.jpg",  description: "with Waste Kit,no overflow,no drainer, multipacking with 4 naked sinks."
     },
     {
-      id: 5, name: "Claron", image: "/images/blanco-claron.png",  description: "Perfect in Design & Function"
+      id: 5, name: "OMNI", image: "/images/franke-omni.jpg",  description: "with Waste Kit,no overflow,no drainer, multipacking with 4 naked sinks"
     },
     {
-      id: 6, name: "Collectis", image: "/images/blanco-collectis.png",  description: "Sorting System"
+      id: 6, name: "TRENDY", image: "/images/franke-trendy.jpg",  description: "TRX 621 steel brushed621 1175x500mm, X BRUSHED/SATIN, 3 1/2 , reversible, no overflow, with waste kit"
     }, 
     {
-      id: 7, name: "Dalago", image: "/images/blanco-dalago.png", description: "Clear lines – maximum capacity"
-    }, 
-    {
-      id: 8, name: "Dana", image: "/images/blanco-dana.png",  description: "Large capacity in a small space"
+      id: 7, name: "SATIN ADRIAN", image: "/images/franke-621.jpg",  description: "AYX 621-116-18, 1160x510mm, reversible, microdecor, 3 1/2, without Waste Kit, no tap hole, with waste kit, with overflow"
     }, 
   ],
 };
