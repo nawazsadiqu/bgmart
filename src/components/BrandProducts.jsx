@@ -410,7 +410,7 @@ const brandProductsData = {
       id: 6, name: " Aris Starlight", image: "/images/atom-6.webp",  description: "Smart Ceiling Fan 1200MM Dark Teakwood."
     }, 
   ],
-   atomberg: [
+   prestige: [
     {
       id: 1, name: "Pressure Cooker", image: "/images/atom-1.jpg",  description: "5 L , 3 L ,2 L , Outerlid induction bottom pressure."
     },
