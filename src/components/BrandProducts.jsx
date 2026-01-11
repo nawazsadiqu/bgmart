@@ -327,6 +327,110 @@ const brandProductsData = {
       id: 6, name: "Hair Smoothener", image: "/images/dyson-7.webp",  description: "Silver and matt black covered Stylish Smoothener"
     }, 
   ],
+  blowhot: [
+    {
+      id: 1, name: "Evana BAC", image: "/images/blowhot-1.webp",  description: "Square Shaped Chimney."
+    },
+    {
+      id: 2, name: " CAMELLIA BAC", image: "/images/blowhot-2.webp", description: "Motion sensor Gesture."
+    },
+    {
+      id: 3, name: "Vega SLNAD", image: "/images/blowhot-3.webp",  description: "Electric Chimney."
+    },
+    {
+      id: 4, name: "Electra TAC MS", image: "/images/blowhot-4.webp",  description: "Auto Clean Wall Mounted Chimney ."
+    },
+    {
+      id: 5, name: "LARA MS ", image: "/images/blowhot-5.webp",  description: "Square shaped chimney."
+    },
+    {
+      id: 6, name: "Corolla", image: "/images/blowhot-6.webp",  description: "Blowhot electronic Chimney."
+    }, 
+  ],
+  hafele: [
+    {
+      id: 1, name: "Brass burner gas hob", image: "/images/hafele-1.jpg",  description: "4 Burner Black Glass."
+    },
+    {
+      id: 2, name: "Brass burner gas hob ", image: "/images/hafele-2.jpg", description: "5 burner, anthracite steel."
+    },
+    {
+      id: 3, name: "Brass burner gas hob", image: "/images/hafele-3.jpg",  description: "4 burner, anthracite steel."
+    },
+    {
+      id: 4, name: "Built-in, induction hob", image: "/images/hafele-4.jpg",  description: "2zone , Black Glass."
+    },
+    {
+      id: 5, name: "Built-in, induction hob", image: "/images/hafele-5.jpg",  description: "Black Glass."
+    },
+    {
+      id: 6, name: "Built-in, microwave with grill function", image: "/images/hafele-6.jpg",  description: "Maria 28, 28L Microwave Oven with Grill Function, easy button operation, grill and defrost function."
+    }, 
+    {
+      id: 7, name: "Built-in, induction hob", image: "/images/hafele-7.jpg",  description: "Bella 30, 30 cm BUILT-IN induction 2 Zone Induction Hob with Premium SCHOTT Glass Surface."
+    }, 
+  ],
+  kent: [
+    {
+      id: 1, name: "Grand", image: "/images/kent-1.webp",  description: "Wall Mountable Ro + Flow Rate 20L/hr."
+    },
+    {
+      id: 2, name: "Grand B ", image: "/images/kent-2.webp", description: "Wall Mountable Ro + Flow Rate 20L/hr."
+    },
+    {
+      id: 3, name: "Grand Star", image: "/images/kent-3.webp",  description: "Wall Mountable Ro + Flow Rate 20L/hr."
+    },
+    {
+      id: 4, name: "Grand star B", image: "/images/kent-4.webp",  description: "Wall Mountable Ro + Flow Rate 20L/hr."
+    },
+    {
+      id: 5, name: "Grand Plus", image: "/images/kent-5.webp",  description: "Wall Mountable Ro + Flow Rate 20L/hr."
+    },
+    {
+      id: 6, name: "Grand Plus B", image: "/images/kent-6.webp",  description: "Wall Mountable Ro + Flow Rate 20L/hr."
+    }, 
+  ],
+  atomberg: [
+    {
+      id: 1, name: "Renesa BLDC Motor", image: "/images/atom-1.jpg",  description: "with Remote 1200 mm Ceiling Fan ( Midnight Black )."
+    },
+    {
+      id: 2, name: "Renesa+ 1200mm BLDC ", image: "/images/atom-2.jpg", description: "Ceiling Fan with Remote Control | BEE 5 star Rated Energy."
+    },
+    {
+      id: 3, name: " ERICA", image: "/images/atom-3.webp",  description: "Comfortable Experience, Offering optimal performance and remote control."
+    },
+    {
+      id: 4, name: "Renesa Halo", image: "/images/atom-4.webp",  description: "Seasand Ivory 1200 mm Ceiling Fan With Remote Control ."
+    },
+    {
+      id: 5, name: "Renesa+ BLDC Motor", image: "/images/atom-5.webp",  description: "with Remote 900 mm Ceiling Fan ( Sand Grey )."
+    },
+    {
+      id: 6, name: " Aris Starlight", image: "/images/atom-6.webp",  description: "Smart Ceiling Fan 1200MM Dark Teakwood."
+    }, 
+  ],
+   atomberg: [
+    {
+      id: 1, name: "Pressure Cooker", image: "/images/atom-1.jpg",  description: "5 L , 3 L ,2 L , Outerlid induction bottom pressure."
+    },
+    {
+      id: 2, name: "Electric Induction ", image: "/images/atom-2.jpg", description: "Prestige PIC 1.0 V2 1900 Watts Indian Menu Options Induction."
+    },
+    {
+      id: 3, name: " Chimney", image: "/images/atom-3.webp",  description: "Prestige Provo 900 Kitchen Hood Chimney - Powerful Suction "
+    },
+    {
+      id: 4, name: "Mixer Grinder", image: "/images/atom-4.webp",  description: "Prestige Stylo 750W Mixer Grinder with 3 ss Jars."
+    },
+    {
+      id: 5, name: "Mixer Grinder", image: "/images/atom-5.webp",  description: "Prestige 550 Watts Supreme Mixer Grinder with 3 Stainless."
+    },
+    {
+      id: 6, name: "Gas Stove", image: "/images/atom-6.webp",  description: "Prestige Svachh Neo Toughened Glasstop Liftable Burners Gas."
+    }, 
+  ],
+
 };
 
 const BrandProducts = () => {
