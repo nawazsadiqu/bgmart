@@ -264,6 +264,32 @@ const brandProductsData = {
       id: 8, name: "Dana", image: "/images/blanco-dana.png",  description: "Large capacity in a small space"
     }, 
   ],
+  franke: [
+    {
+      id: 1, name: "Adira", image: "/images/franke-bwx.png",  description: "Modern design with superior functionality"
+    },
+    {
+      id: 2, name: " Andano", image: "/images/blanco-andano.png", description: " Functional Elegance - A stainless steel bowl with everything you need."
+    },
+    {
+      id: 3, name: "Axia III", image: "/images/blanco-axia.png",  description: "The AXEN Concept: uniquely ergonomic"
+    },
+    {
+      id: 4, name: "Axis", image: "/images/blanco-axis.png",  description: "Ergonomics and efficiency define the tried and tested AXen concept."
+    },
+    {
+      id: 5, name: "Claron", image: "/images/blanco-claron.png",  description: "Perfect in Design & Function"
+    },
+    {
+      id: 6, name: "Collectis", image: "/images/blanco-collectis.png",  description: "Sorting System"
+    }, 
+    {
+      id: 7, name: "Dalago", image: "/images/blanco-dalago.png", description: "Clear lines – maximum capacity"
+    }, 
+    {
+      id: 8, name: "Dana", image: "/images/blanco-dana.png",  description: "Large capacity in a small space"
+    }, 
+  ],
 };
 
 const BrandProducts = () => {
