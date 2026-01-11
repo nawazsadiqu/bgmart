@@ -194,6 +194,26 @@ const brandProductsData = {
       id: 7, name: "Roma 4BB BK CI ", image: "/images/faber-roma4bb.png", price: "₹4,990", description: "Looks great , Cooks better."
     },
   ],
+   kaff: [
+    {
+      id: 1, name: "FALMARC DHC 90-A ", image: "/images/kaff-1.webp",  description: "Filterless + Dry Heat Autoclean."
+    },
+    {
+      id: 2, name: "MISSONI 90 DC ", image: "/images/kaff-2.webp", description: "Kitchen Chimney with Touch Control."
+    },
+    {
+      id: 3, name: "CANARY 90 DC", image: "/images/kaff-3.webp",  description: "Zero Maintanance Chimney."
+    },
+    {
+      id: 4, name: "CASTO 60 DC ", image: "/images/kaff-4.webp",  description: "Smart Auto clean Filterless Kitchen Chimney."
+    },
+    {
+      id: 5, name: "Brando 90 DC", image: "/images/kaff-5.webp",  description: "Wall Mounted Kitchen Chimney."
+    },
+    {
+      id: 6, name: "Albury 60/75 DC", image: "/images/kaff-6.webp",  description: "Smart Auto Clean Chimney."
+    }, 
+  ],
   hindware: [
     {
       id: 1, name: "Optimus I Pro", image: "/images/optimus-ipro.webp", price: "₹63,990", description: "Powerful suction for a smoke-free kitchen."
