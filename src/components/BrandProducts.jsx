@@ -217,7 +217,27 @@ const brandProductsData = {
       id: 7, name: "Ivana 3B 75CM", image: "/images/ivana.webp", price: "₹56,990", description: "Durable, stylish, and effective for daily cooking."
     },
     
-  ]
+  ],
+   zerob: [
+    {
+      id: 1, name: "AS8 – 8000LPH Water Softener", image: "/images/zerob-as8.png", price: "₹28,000", description: "Auto Soft 8 converts hard water into soft water and comes with distinctive Purple Resin Media."
+    },
+    {
+      id: 2, name: " Autocarbon 3000LPH", image: "/images/zerob-autocarbon.png", price: "₹65,241", description: " new generation of activated carbon for the removal of chlorine, undesirable colour, and odour from the water."
+    },
+    {
+      id: 3, name: "Icy Hot Jumbo", image: "/images/Zerob-icyhotjumbo.png", price: "₹1,75,000", description: "stylishly designed machine that delivers purified water in three temperature options: hot, cold, and normal."
+    },
+    {
+      id: 4, name: "Indromatic", image: "/images/zerob-indromatic.png", price: "₹4,59,000", description: "Advanced packaged reverse osmosis system"
+    },
+    {
+      id: 5, name: "LAB-Q Smart – Type II", image: "/images/zerob-labq.png", price: "₹1,12,000", description: "INDION Lab-Q smart (Type II) water maker produces pure water which is essential for creating chemical reagents"
+    },
+    {
+      id: 6, name: "UV Chill", image: "/images/zerob-uvchill.png", price: "₹80,000", description: "ZeroB eco Chill water cooler comes with UV + ESS technology. "
+    }, 
+  ],
 };
 
 const BrandProducts = () => {
