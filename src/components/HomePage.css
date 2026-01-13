@@ -96,7 +96,11 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
-  
+ 
+  .hero-bg {
+    background-size: 100% auto;    /* width fits screen, height adjusts automatically */
+    background-position: top center; /* keep top visible */
+  }
 
 
   .glow-orb {
