@@ -98,6 +98,11 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
+.hero-section {
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
  
   .hero-bg {
     background-size: 100% auto;    /* width fits screen, height adjusts automatically */
