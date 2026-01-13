@@ -54,22 +54,32 @@ const products = [
   },
 ];
 
+const whatsappNumber = "+917795325616"; 
+
 const Products = () => {
-  return (
+ return (
     <div className="products-page">
       <h1 className="products-title">Best Sellers</h1>
 
       <div className="products-grid">
         {products.map((product) => (
-          <div className="product-card" key={product.id}>
-            <div className="product-image">
-              <img src={product.image} alt={product.name} />
-            </div>
+          <a
+            href={`https://wa.me/${whatsappNumber}?text=Hello! I'm interested in the "${product.name}"`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="product-card-link"
+            key={product.id}
+          >
+            <div className="product-card">
+              <div className="product-image">
+                <img src={product.image} alt={product.name} />
+              </div>
 
-            <div className="product-info">
-              <h3>{product.name}</h3>
+              <div className="product-info">
+                <h3>{product.name}</h3>
+              </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
