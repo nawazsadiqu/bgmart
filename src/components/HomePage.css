@@ -100,7 +100,7 @@
      /* focus on top part */
     /* optionally slightly scale down for better fit */
     transform: scale(1.05);
-    background-size: 100% auto;
+    /* background-size: 100% auto; */
   }
 
 
