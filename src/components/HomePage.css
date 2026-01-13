@@ -97,7 +97,7 @@
 @media (max-width: 768px) {
 
   .hero-bg {
-    background-position: top center; /* focus on top part */
+     /* focus on top part */
     /* optionally slightly scale down for better fit */
     transform: scale(1.05);
     background-size: 100% auto;
