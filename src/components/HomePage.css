@@ -109,10 +109,7 @@
 }
 
  
-  .hero-bg {
-    background-size: 100% auto;    /* width fits screen, height adjusts automatically */
-   /* keep top visible */
-  }
+  
 
   
 .hero-bg-img {
