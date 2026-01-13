@@ -100,9 +100,10 @@
     background-position: top center; /* focus on top part */
     /* optionally slightly scale down for better fit */
     transform: scale(1.05);
+    background-size: 100% auto;
   }
 
-  
+
   .glow-orb {
     width: 400px;
     height: 400px;
