@@ -96,12 +96,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
 
-  .hero-bg {
-     /* focus on top part */
-    /* optionally slightly scale down for better fit */
-    transform: scale(1.05);
-    /* background-size: 100% auto; */
-  }
+  
 
 
   .glow-orb {
