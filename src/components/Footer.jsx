@@ -64,6 +64,41 @@ const Footer = () => {
   </a>
 
   <a
+    href="tel:+917022973011"
+    className="footer-contact"
+  >
+    <Phone size={16} /> +91 7022973011
+  </a>
+
+  <a
+    href="tel:+917022973012"
+    className="footer-contact"
+  >
+    <Phone size={16} /> +91 7022973012
+  </a>
+
+  <a
+    href="tel:+917022973013"
+    className="footer-contact"
+  >
+    <Phone size={16} /> +91 7022973013
+  </a>
+
+  <a
+    href="tel:+917022973014"
+    className="footer-contact"
+  >
+    <Phone size={16} /> +91 7022973014
+  </a>
+
+  <a
+    href="tel:+917022973015"
+    className="footer-contact"
+  >
+    <Phone size={16} /> +91 7022973015
+  </a>
+
+  <a
     href="mailto:bgchimneymart1@gmail.com"
     className="footer-contact"
   >

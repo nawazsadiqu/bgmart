@@ -12,12 +12,35 @@ const ContactUs = () => {
 
         {/* CONTACT DETAILS */}
         <div className="contact-info">
-            <p>Reach out to us - we are just a call away. You can call us on</p>
+            <p>Reach out to us - we are just a call away. <br /> You can call us on</p>
             <br />
           <p>
-            📞 <strong>Mobile:</strong>{" "}
+             <strong>Mobile:</strong>{" "}
             <a href="tel:+917795325616">+91 7795325616</a>
           </p>
+          <div className="sales-numbers">
+          <p>Call our Sales Executives</p><br />
+          <p>
+    <span className="label">Mobile:</span>
+    <a href="tel:+917022973011">+91 7022973011</a>
+  </p>
+  <p>
+    <span className="label"></span>
+    <a href="tel:+917022973012">+91 7022973012</a>
+  </p>
+  <p>
+    <span className="label"></span>
+    <a href="tel:+917022973013">+91 7022973013</a>
+  </p>
+  <p>
+    <span className="label"></span>
+    <a href="tel:+917022973014">+91 7022973014</a>
+  </p>
+  <p>
+    <span className="label"></span>
+    <a href="tel:+917022973015">+91 7022973015</a>
+  </p>
+  </div>
           <br />
 
           <p>

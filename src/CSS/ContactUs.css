@@ -35,3 +35,14 @@
   text-decoration: underline;
 }
 
+.sales-numbers p {
+  display: flex;
+  gap: 10px;
+  margin: 6px 0;
+}
+
+.sales-numbers .label {
+  width: 70px;   /* aligns all numbers */
+  font-weight: 600;
+}
+
