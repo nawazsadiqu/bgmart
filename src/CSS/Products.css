@@ -31,6 +31,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+ .product-card-link,
+.product-card-link h3 {
+  text-decoration: none;
+  color: inherit;
+}
+
 .product-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgb(0, 0, 0);
@@ -58,6 +64,7 @@
 .product-info {
   padding: 1rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .product-info h3 {
@@ -91,6 +98,12 @@
     overflow: hidden;
   }
 
+  .product-card-link,
+.product-card-link h3 {
+  text-decoration: none;
+  color: inherit;
+}
+
   /* Product image */
   .product-image {
     height: 100px !important;  /* control height */
@@ -113,15 +126,7 @@
     text-decoration: none;
   }
 
-  .product-info h3 {
-    font-size: 0.7rem !important;
-    line-height: 1 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  
 
   /* Hide any other elements */
   .price,
