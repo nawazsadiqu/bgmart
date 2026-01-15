@@ -49,8 +49,28 @@ const products = [
   },
   {
     id: 10,
-    name: "Free Standing DishWashers",
+    name: "DishWashers",
     image: "/images/dish1.jpg",
+  },
+  {
+    id: 11,
+    name: "RO Water Purifier",
+    image: "/images/rowater-purifier.png",
+  },
+  {
+    id: 12,
+    name: "Washing Machine",
+    image: "/images/washingmachine.jpg",
+  },
+  {
+    id: 13,
+    name: "Refrigerator",
+    image: "/images/refrigerator.jpg",
+  },
+  {
+    id: 14,
+    name: "Water Heater",
+    image: "/images/heater.jpg",
   },
 ];
 
