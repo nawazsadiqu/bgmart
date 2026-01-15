@@ -2,8 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./HomePage.css";
 
 const images = [
-  "/images/Wallpaper1.jpeg",
-  "/images/Wallpaper2.jpeg" // Add more images here if needed
+  "/images/Wallpaper3.jpg",
+  "/images/Wallpaper4.jpg", // Add more images here if needed
+  
+  "/images/Wallpaper6.jpg"
+
 ];
 
 const HomePage = () => {

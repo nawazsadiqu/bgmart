@@ -1,26 +1,26 @@
 .hero-section {
   position: relative;
-  height: 100vh;
+  min-height: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 100%;
+  /* width: 100%; */
 
 }
 
 /* Overlay for dark & blur effect */
-/* .hero-section::before {
+.hero-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.35); 
-  backdrop-filter: blur(1px); 
+  background-color: rgba(0, 0, 0, 0.15); 
+  backdrop-filter: blur(0.5px); 
   z-index: 5; 
-} */
+}
 
 .hero-bg {
   position: absolute;
@@ -39,7 +39,7 @@
 /* Hero content above overlay */
 .hero-content {
  position: relative;
-  z-index: 3;
+  z-index: 5;
   text-align: center;
   padding: 2rem;
   max-width: 1200px;
@@ -53,21 +53,21 @@
   margin-top: 80px;
   line-height: 1.2;
   letter-spacing: 1px;
-  text-shadow: 0 10px 5px rgba(0, 0, 0, 0.8);
-  color: goldenrod;
+  text-shadow: 0 10px 5px rgba(59, 39, 2, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 .hero-subtitle {
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  font-weight: 300;
+  font-size: clamp(1.5rem, 2vw, 1.3rem);
+  font-weight: 2000;
   margin-bottom: 3rem;
   line-height: 1.6;
-  color: rgb(238, 175, 15);
+  color: rgb(78, 9, 9);
   text-shadow: 
-      -1px -1px 0 black,
-      1px -1px 0 black,
-      -1px 1px 0 black,
-      1px 1px 0 black;
+      -1px -1px 0 rgb(255, 255, 255),
+      1px -1px 0 rgb(255, 255, 255),
+      -1px 1px 0 rgb(255, 255, 255),
+      1px 1px 0 rgb(255, 255, 255);
 }
 
 .chat-button {
