@@ -5,7 +5,7 @@ const images = [
   "/images/Wallpaper3.jpg",
   "/images/Wallpaper4.jpg", // Add more images here if needed
   
-  "/images/Wallpaper6.jpg"
+  "/images/Wallpaper6.jpeg"
 
 ];
 
